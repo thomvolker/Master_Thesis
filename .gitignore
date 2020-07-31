@@ -2,5 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-\MSBBSS\Literature
-\SaSR\Literature
+/MSBBSS/Literature/*
+/SaSR/Literature/*
