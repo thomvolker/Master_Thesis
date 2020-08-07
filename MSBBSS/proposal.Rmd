@@ -1,0 +1,30 @@
+---
+title: |
+  | Proposal MSBBSS thesis
+author: | 
+  | Thom Volker, Utrecht University
+output: 
+  bookdown::pdf_document2:
+    number_sections: true
+    df_print: kable
+    highlight: pygments
+    toc: false
+mainfont: Calibri
+sansfont: Calibri
+linestretch: 1.5
+fontsize: 10pt
+date: "`r format(Sys.time(), '%d-%m-%Y')`"
+indent: true
+tables: true
+header-includes:
+  - \usepackage{caption}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+As of today, many methods for aggregating scientific evidence have been proposed. Examples are, but are not limited to, conventional (study-level) meta-analysis, individual-level meta-analysis and Bayesian updating. 
+
