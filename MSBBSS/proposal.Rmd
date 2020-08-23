@@ -1,8 +1,37 @@
 ---
 title: |
-  | Proposal MSBBSS thesis
-author: | 
-  | Thom Volker, Utrecht University
+  | PROPOSAL
+  | 
+  | 
+  |
+  |
+  | **Bayesian Evidence Synthesis**
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+author: |
+  | Thom Volker, 5868777
+  |
+  |
+  |
+  | *Methodology and Statistics for the Behavioural, Biomedical and Social Sciences*
+  |
+  | *Utrecht University*
+  |
+  |
+  |
+  | Supervisor: Irene Klugkist
+  |
+  |
+  | `r format(Sys.time(), '%B %d, %Y')`
+  |
+  |
+  | `r paste0("Word count: ", wordcountaddin::word_count())`
 output: 
   bookdown::pdf_document2:
     number_sections: true
@@ -13,7 +42,9 @@ mainfont: Calibri
 sansfont: Calibri
 linestretch: 1.5
 fontsize: 10pt
-date: "`r format(Sys.time(), '%d-%m-%Y')`"
+params: 
+  !r Sys.setlocale("LC_TIME", "C")
+date: 
 indent: true
 tables: true
 header-includes:
@@ -24,7 +55,16 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+\newpage
+
 # Introduction
 
-As of today, many methods for aggregating scientific evidence have been proposed. Examples are, but are not limited to, conventional (study-level) meta-analysis, individual-level meta-analysis and Bayesian updating. 
+As of today, many methods for aggregating scientific evidence have been proposed. Examples are, but are not limited to, conventional (study-level) meta-analysis, individual-level meta-analysis and Bayesian updating. The advantages of such methods are numerous: (i) they enable researchers to establish effects over different studies, (ii) 
+
+As of today, many methods for aggregating scientific evidence have been proposed. Two well-known examples are meta-analysis and Bayesian sequantial updating. Both methods aim at combining the multiple sources of evidence, either from multiple studies, or from collecting additional data.
+
+As of today, many methods for aggregating scientific evidence have been proposed. Examples are, but are not limited to, conventional (study-level) meta-analysis, individual-level meta-analysis and Bayesian updating. The advantages of such methods are numerous: (i) they enable researchers to establish effects over different studies, (ii) 
+
+As of today, many methods for aggregating scientific evidence have been proposed. Two well-known examples are meta-analysis and Bayesian sequantial updating. Both methods aim at combining the multiple sources of evidence, either from multiple studies, or from collecting additional data.
 
