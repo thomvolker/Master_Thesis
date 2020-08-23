@@ -5,8 +5,8 @@ title: |
   | 
   |
   |
-  | **Bayesian Evidence Synthesis**
   |
+  | **Bayesian Evidence Synthesis**
   |
   |
   |
@@ -18,14 +18,14 @@ author: |
   | Thom Volker, 5868777
   |
   |
+  | Supervisor: Irene Klugkist
+  |
+  |
   |
   | *Methodology and Statistics for the Behavioural, Biomedical and Social Sciences*
   |
   | *Utrecht University*
   |
-  |
-  |
-  | Supervisor: Irene Klugkist
   |
   |
   | `r format(Sys.time(), '%B %d, %Y')`
@@ -64,7 +64,5 @@ As of today, many methods for aggregating scientific evidence have been proposed
 
 As of today, many methods for aggregating scientific evidence have been proposed. Two well-known examples are meta-analysis and Bayesian sequantial updating. Both methods aim at combining the multiple sources of evidence, either from multiple studies, or from collecting additional data.
 
-As of today, many methods for aggregating scientific evidence have been proposed. Examples are, but are not limited to, conventional (study-level) meta-analysis, individual-level meta-analysis and Bayesian updating. The advantages of such methods are numerous: (i) they enable researchers to establish effects over different studies, (ii) 
 
-As of today, many methods for aggregating scientific evidence have been proposed. Two well-known examples are meta-analysis and Bayesian sequantial updating. Both methods aim at combining the multiple sources of evidence, either from multiple studies, or from collecting additional data.
 
