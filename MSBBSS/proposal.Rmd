@@ -49,6 +49,8 @@ indent: true
 tables: true
 header-includes:
   - \usepackage{caption}
+bibliography: "/Users/thomvolker/Documents/Master_Thesis/thesis_literature.bib"
+csl: "/Users/thomvolker/Documents/styles/apa-6th-edition.csl"
 ---
 
 ```{r setup, include=FALSE}
@@ -60,9 +62,30 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-As of today, many methods for aggregating scientific evidence have been proposed. Examples are, but are not limited to, conventional (study-level) meta-analysis, individual-level meta-analysis and Bayesian updating. The advantages of such methods are numerous: (i) they enable researchers to establish effects over different studies, (ii) 
+The importance of replication in science has been legitimately supported during recent years [e.g., @open_science_collab_2015; @baker_reproducibility_2016; @brandt_et_al_replication_2014]. However, most of the attention has been focused on exact, or close replications, that is, replications concerned with the statistical reliability of the results. The effects estimated in these replications can be pooled, eventually with other studies with a similar design, by means of meta-analysis or Bayesian sequential updating, so that a researcher is able to obtain a more precise estimate of the population parameter of interest. Although the initiative to directly replicate and combine similar studies is commendable, 
+
+
+<!--of such replications is commendable
+
+
+Although this is a commendable initiative, direct replications lack some of the benefits offered by conceptual replications.
+
+
+have severe shortcomings by themselves, as illustrated by @munafo_robust_2018. Most importantly, the authors stress that if researcher make use of flawed methods or study designs, methodological artefacts could be taken as truth. 
+
+
+<!--
+Although every single properly designed scientific study is a step in the right direction, a single study is also always insufficient
+
+As of today, several methods for aggregating scientific evidence have been proposed. Examples are, but are not limited to, conventional (study-level) meta-analysis, individual-level meta-analysis and Bayesian updating. The advantages of such methods are numerous: (i) they enable researchers to establish effects over different studies, (ii) 
 
 As of today, many methods for aggregating scientific evidence have been proposed. Two well-known examples are meta-analysis and Bayesian sequantial updating. Both methods aim at combining the multiple sources of evidence, either from multiple studies, or from collecting additional data.
+-->
 
+# References
 
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\noindent
 
+<div id="refs"></div>
