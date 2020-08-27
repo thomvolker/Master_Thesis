@@ -62,7 +62,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-The importance of replication in science has been legitimately supported during recent years [e.g., @open_science_collab_2015; @baker_reproducibility_2016; @brandt_et_al_replication_2014]. However, most of the attention has been focused on exact, or close replications, that is, replications concerned with the statistical reliability of the results. The effects estimated in these replications can be pooled, eventually with other studies with a similar design, by means of meta-analysis or Bayesian sequential updating, so that a researcher is able to obtain a more precise estimate of the population parameter of interest. Although the initiative to directly replicate and combine similar studies is commendable, 
+The importance of replication in science has been legitimately supported during recent years [e.g., @open_science_collab_2015; @baker_reproducibility_2016; @brandt_et_al_replication_2014]. However, most of the attention has been focused on exact, or close replications, that is, replications concerned with the statistical reliability of the results. Unfortunately, if results from any initial study depend on methodological flaws, inferences from exact replications of this study will reproduce these methodological artefacts, leading to suboptimal or invalid conclusions [@munafo_robust_2018]. A solution for this issue is available in the form of conceptual replications, which are merely about the validity of the study. That is, conceptual replications are a way of investigating whether the initial conclusions hold under different conditions, such as a different operationalization of the construct of interest or a different measurement instrument.
+
+
+
+
+The effects estimated in these replications can be pooled, eventually with other studies with a similar design, by means of meta-analysis or Bayesian sequential updating, so that a researcher is able to obtain a more precise estimate of the population parameter of interest. Although the initiative to directly replicate and/or combine similar studies is commendable, this approach lacks depth
 
 
 <!--of such replications is commendable
