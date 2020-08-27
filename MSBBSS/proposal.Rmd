@@ -51,6 +51,8 @@ header-includes:
   - \usepackage{caption}
 bibliography: "/Users/thomvolker/Documents/Master_Thesis/thesis_literature.bib"
 csl: "/Users/thomvolker/Documents/styles/apa-6th-edition.csl"
+link-citations: yes
+linkcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -60,10 +62,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \newpage
 
+\definecolor{darkgreen}{rgb}{0.0, 0.44, 0.0}
+
 # Introduction
 
-The importance of replication in science has been legitimately supported during recent years [e.g., @open_science_collab_2015; @baker_reproducibility_2016; @brandt_et_al_replication_2014]. However, most of the attention has been focused on exact, or close replications, that is, replications concerned with the statistical reliability of the results. Unfortunately, if results from any initial study depend on methodological flaws, inferences from exact replications of this study will reproduce these methodological artefacts, leading to suboptimal or invalid conclusions [@munafo_robust_2018]. A solution for this issue is available in the form of conceptual replications, which are merely about the validity of the study. That is, conceptual replications are a way of investigating whether the initial conclusions hold under different conditions, such as a different operationalization of the construct of interest or a different measurement instrument.
+**\color{darkgreen} Ik vraag me af of dit niet een te uitgebreide inleiding voor een proposal is, omdat de limiet maar 750 woorden is. Ik kan dit ook bewaren voor de daadwerkelijke inleiding, en het proposal heel kort inleiding met iets als: onderzoekers maken nou eenmaal bewust en onbewust verschillende keuzes met eenzelfde onderzoeksvraag. Wanneer dit het geval is, is het lastig om het bewijs te aggregeren, omdat meta-analyse hier niet goed toe in staat is. Een alternatieve methode is BES, die gebruikt kan worden om ... **
 
+The importance of replication in science has been legitimately supported during recent years [e.g., @open_science_collab_2015; @baker_reproducibility_2016; @brandt_et_al_replication_2014]. \textcolor{darkgreen}{MISSCHIEN HIER NOG EEN VOORBEELD AAN KOPPELEN} However, most of the attention has been focused on exact, or close replications, that is, replications concerned with the statistical reliability of the results. Unfortunately, if results from any initial study depend on methodological flaws, inferences from exact replications of this study will reproduce these methodological artefacts, leading to suboptimal or invalid conclusions [@munafo_robust_2018]. A solution for this issue is available in the form of conceptual replications, which are merely about the validity of the study. That is, conceptual replications are a way of investigating whether the initial conclusions hold under different conditions, such as a different operationalization of the construct of interest or a different measurement instrument. \textcolor{darkgreen}{EVENTUEEL AANVULLEN DAT ONDERZOEKERS OOK ONBEWUST VERSCHILLENDE KEUZES KUNNEN MAKEN, DIT KAN OOK WEER PROBLEMEN OPLEVEREN VOOR SAMENVOEGEN RESULTATEN}. It is expected that if there actually exists a relevant effect in the population, is should become apparent under a variety of justifiable methods and operationalizations.
+
+
+
+\bigskip
+\bigskip
+
+Multiple researcher may make a variety of justifiable decisions with regard to the design of a study, all leading to deviating results, a tendency that is commonly referred to as *the garden of forking paths*.
+
+
+\bigskip
+\bigskip
 
 
 
