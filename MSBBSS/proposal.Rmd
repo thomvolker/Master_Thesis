@@ -40,7 +40,7 @@ output:
     toc: false
 mainfont: Calibri
 sansfont: Calibri
-linestretch: 1.5
+linestretch: 2
 fontsize: 10pt
 params: 
   !r Sys.setlocale("LC_TIME", "C")
@@ -64,11 +64,33 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \definecolor{darkgreen}{rgb}{0.0, 0.44, 0.0}
 
+<!--
+\noindent
+\textcolor{darkgreen}{Ik vraag me af of dit niet een te uitgebreide inleiding voor een proposal is, omdat de limiet maar 750 woorden is. Ik kan dit ook bewaren voor de daadwerkelijke inleiding, en het proposal heel kort inleiding met iets als: onderzoekers maken nou eenmaal bewust en onbewust verschillende keuzes met eenzelfde onderzoeksvraag. Wanneer dit het geval is, is het lastig om het bewijs te aggregeren, omdat meta-analyse hier niet goed toe in staat is. Een alternatieve methode is BES, die gebruikt kan worden om ... }
+-->
+
+In recent years, a meta-analytic way of thinking has been advocated in the scientific community [@cumming_new_2014]. Additionally, the importance of replication has been legitimately supported [e.g., @open_science_collab_2015; @baker_reproducibility_2016; @brandt_et_al_replication_2014]. However, most of the attention has been focused on studies that are highly similar, using an identical methodology and research design. These studies, commonly referred to as exact, direct or close replications, are merely concerned with the statistical reliability of the results. Unfortunately, if the results of these studies depend on methodological flaws, inferences from all studies will lead to suboptimal or invalid conclusions [@munafo_robust_2018]. A safeguard against this deficiency is available in the form of conceptual replications, which primarily assess the validity of a study. That is, conceptual replications are a way of investigating whether the initial conclusions hold under different conditions, using varying measurement instruments or choosing different operationalizations. \textcolor{darkgreen}{Voor mijn gevoel kan de relevantie nog verder benadrukt worden door te zeggen dat onderzoekers ook onbewust verschillende (te rechtvaardigen) keuzes maken mbt de analyse (\emph{garden of forking paths}), maar ik vind dat ook weer niet zo goed passen bij de rest van dit stuk.}
+
+As a consequence, multiple studies regarding the same hypotheses arise and as per the cumulative nature of science, synthesizing the results is required to build a robust and solid body of evidence. When the studies are highly similar, established methods as (Bayesian) meta-analysis and Bayesian updating can be used to pool the results [@lipsey_wilson_2001; @sutton_bayesian_meta2001; @glasauer_sequential_2019] \textcolor{darkgreen}{Heel vreemd, maar ik kan echt zo goed als niks over Bayesian Sequential Updating vinden. Ondanks dat het in deze bron (Glasauer) wel oke uitgelegd wordt, is het niet echt ons interessegebied geloof ik.} 
+
+
+
+
 # Introduction
 
-**\color{darkgreen} Ik vraag me af of dit niet een te uitgebreide inleiding voor een proposal is, omdat de limiet maar 750 woorden is. Ik kan dit ook bewaren voor de daadwerkelijke inleiding, en het proposal heel kort inleiding met iets als: onderzoekers maken nou eenmaal bewust en onbewust verschillende keuzes met eenzelfde onderzoeksvraag. Wanneer dit het geval is, is het lastig om het bewijs te aggregeren, omdat meta-analyse hier niet goed toe in staat is. Een alternatieve methode is BES, die gebruikt kan worden om ... **
+<!--The importance of replication in science has been legitimately supported during recent years [e.g., @open_science_collab_2015; @baker_reproducibility_2016; @brandt_et_al_replication_2014]. <!-- {\textcolor{darkgreen}{MISSCHIEN HIER NOG EEN VOORBEELD AAN KOPPELEN, MAAR WORDT MISSCHIEN OOK TE VEEL (AFHANKELIJK VAN HOE DUIDELIJK HET ZONDER VOORBEELD IS)} --> <!--However, most of the attention has been focused on exact, or close replications, that is, replications concerned with the statistical reliability of the results. Unfortunately, if results from any initial study depend on methodological flaws, inferences from exact replications of this study will reproduce these methodological artefacts, leading to suboptimal or invalid conclusions [@munafo_robust_2018]. A solution for this issue is available in the form of conceptual replications, which are merely about the validity of the study. That is, conceptual replications are a way of investigating whether the initial conclusions hold under different conditions, such as a different operationalization of the construct of interest or a different measurement instrument. Also, next to purposefully alter aspects of a certain study as done in conceptual replications, researchers may make different, but justifiable, choices when it comes to analysing the data. This situation, which is also commonly referred to as *the garden of forking paths*, in combination with intentional replication research, leads to the fact that there are often multiple studies assessing the same underlying research question.
 
-The importance of replication in science has been legitimately supported during recent years [e.g., @open_science_collab_2015; @baker_reproducibility_2016; @brandt_et_al_replication_2014]. \textcolor{darkgreen}{MISSCHIEN HIER NOG EEN VOORBEELD AAN KOPPELEN} However, most of the attention has been focused on exact, or close replications, that is, replications concerned with the statistical reliability of the results. Unfortunately, if results from any initial study depend on methodological flaws, inferences from exact replications of this study will reproduce these methodological artefacts, leading to suboptimal or invalid conclusions [@munafo_robust_2018]. A solution for this issue is available in the form of conceptual replications, which are merely about the validity of the study. That is, conceptual replications are a way of investigating whether the initial conclusions hold under different conditions, such as a different operationalization of the construct of interest or a different measurement instrument. \textcolor{darkgreen}{EVENTUEEL AANVULLEN DAT ONDERZOEKERS OOK ONBEWUST VERSCHILLENDE KEUZES KUNNEN MAKEN, DIT KAN OOK WEER PROBLEMEN OPLEVEREN VOOR SAMENVOEGEN RESULTATEN}. It is expected that if there actually exists a relevant effect in the population, is should become apparent under a variety of justifiable methods and operationalizations.
+Once several studies have been completed, several methods are available to combine the results from all studies into a single measure of evidence with regard to the hypothesis at hand. However, the best-known methods for evidence aggregation, meta-analysis and Bayesian updating, are not appropriate when the goal is to pool the results from studies with different designs or different statistical methods [@lipsey_wilson_2001; ]. 
+
+<!--
+Additionally, researcher can analyse a single dataset in a variety of justifiable ways
+
+researchers may also unconsciously use different study designs
+
+\textcolor{darkgreen}{EVENTUEEL AANVULLEN DAT ONDERZOEKERS OOK ONBEWUST VERSCHILLENDE KEUZES KUNNEN MAKEN, DIT KAN OOK WEER PROBLEMEN OPLEVEREN VOOR SAMENVOEGEN RESULTATEN}. 
+
+
+It is expected that if there actually exists a relevant effect in the population, is should become apparent under a variety of justifiable methods and operationalizations.
 
 
 
