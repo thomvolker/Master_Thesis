@@ -1,0 +1,103 @@
+---
+title: "Bayesian Evidence Synthesis"
+author: "Thom Volker"
+date: "`r format(Sys.time(), '%d-%m-%Y')`"
+output: 
+  ioslides_presentation:
+    incremental: true
+    logo: uu_logo.png
+bibliography: "/Users/thomvolker/Documents/Master_Thesis/thesis_literature.bib"
+csl: "/Users/thomvolker/Documents/styles/apa-6th-edition.csl"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Replication {.build}
+
+Repetition increases the perceived truth equally for plausible and implausible statements [@fazio_presentation_2019]
+
+<div class="centered">
+```{r, message = F, warning = F, fig.height = 3}
+library(purrr)
+library(meta)
+
+set.seed(1996)
+
+nstudies <- 6
+
+studies <- map(1:nstudies, ~rnorm(10, -1, 2))
+
+meta_data2 <- list(n = sapply(studies, function(x) length(x)),
+                   means = sapply(studies, mean),
+                   sds = sapply(studies, sd))
+
+
+metamean(n = meta_data2$n,
+         mean = meta_data2$mean,
+         sd = meta_data2$sds) %>% forest(comb.fixed = T,
+                                         comb.random = F,
+                                         overall = T,
+                                         overall.hetstat = F)
+
+```
+
+</div>
+
+Replication is nice, but not enough.
+
+## Conceptual replications
+
+- If a study is methodologically flawed, all direct replications will inherently exploit the flaws.
+
+- Conceptual replications try to address a single problem from different angles. <!-- And thus inherently use different methodologies --> 
+  * Different methodologies
+  * Different operationalizations
+
+- But how should we combine multiple studies with varying designs?
+
+## Bayesian Evidence Synthesis
+
+<!-- Meta analysis and sequantial updating are not applicable, so we need something else, which is available in the form of Bayesian Evidence Synthesis -->
+
+Instead of addressing the parameter estimates, Bayesian Evidence Synthesis expresses the support for a given hypothesis in terms of a Bayes Factor [@kuiper_combining_2013].
+
+1. Construct study-specific hypotheses that incorporate the models and operationalizations at hand.
+
+2. Express the support for the study specific hypotheses in terms of a Bayes Factor. 
+
+3. Combine the study-specific Bayes Factors by means of multiplication into one overall measure of evidence.
+
+## Proposal {.build}
+
+In general conditions, Bayesian Evidence Synthesis proved to work.
+
+However, study-specific Bayes Factors depend on the fit and the complexity.
+
+- How to handle hypotheses with varying dimensions?
+
+- Can we incorporate underpowered studies?
+
+- How to handle situations in which the sample sizes differ dramatically over the studies?
+
+## Specifically {.build}
+
+Simulations with multiple statistical models (e.g., linear, logit, probit and/or Poisson regression).
+
+Vary:
+
+- Sample sizes
+
+- Number of parameters in the hypotheses
+
+- Effect sizes
+
+- Equality / inequality constrained hypotheses
+
+Evaluate:
+
+- True hypothesis rate
+
+## References
