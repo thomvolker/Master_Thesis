@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Replication {.build}
 
-Repetition increases the perceived truth equally for plausible and implausible statements [@fazio_presentation_2019]
+Repetition increases the perceived truth equally for plausible and implausible statements [@fazio_presentation_2019].
 
 <div class="centered">
 ```{r, message = F, warning = F, fig.height = 3}
@@ -28,7 +28,7 @@ set.seed(1996)
 
 nstudies <- 6
 
-studies <- map(1:nstudies, ~rnorm(10, -1, 2))
+studies <- map(1:nstudies, ~rnorm(10, -1, 3))
 
 meta_data2 <- list(n = sapply(studies, function(x) length(x)),
                    means = sapply(studies, mean),
@@ -80,7 +80,7 @@ However, study-specific Bayes Factors depend on the fit and the complexity.
 
 - Can we incorporate underpowered studies?
 
-- How to handle situations in which the sample sizes differ dramatically over the studies?
+- Optional: How to handle situations in which the sample sizes differ dramatically over the studies?
 
 ## Specifically {.build}
 
@@ -99,5 +99,7 @@ Vary:
 Evaluate:
 
 - True hypothesis rate
+
+# Questions / comments / tips?
 
 ## References
