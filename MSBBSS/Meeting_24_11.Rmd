@@ -1,0 +1,77 @@
+---
+title: "Meeting 24-11"
+author: "Thom Volker"
+date: "11/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Meeting
+
+Things to discuss:
+
+ - Effect sizes in non-linear models - logit, probit: Lion uses the underlying predictor to specify the effect sizes (so basically the same model as in linear regression, but than transformed into a dichotomous variable using a binomial distributed variable with $p = \frac{e^{y}}{1 + e^{y}}$ for the logit model, or $p = \Phi(y)$ for the probit model.
+
+    - How to take the variance into account. Because drawing values randomly from a binomial distribution already induces variance.
+    
+    
+Simulate data from a multivariate normal model. 
+
+$$
+
+$$
+
+
+In the simulations, we consider a standardized regression model 
+$$
+y = \textbf{X}\beta + \epsilon,
+$$
+where $y$ is the outcome variable, $\textbf{X}$ is an $n \times K$ matrix containing the values of observations $i = 1, 2, \dots, n$ on variables $k = 1, 2, \dots, K$. Specifically, $\textbf{X}$ is standard normally distributed 
+$$
+X \sim \mathcal{N}(\mu, \boldsymbol{\Sigma}),
+$$
+where $\mu$ is a zero mean vector of length $K$, and a $K \times K$ covariance matrix $\Sigma$
+
+$$
+\mu = 
+\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 0
+\end{bmatrix},
+~~~~~~~~~~
+\boldsymbol{\Sigma} = 
+\begin{bmatrix}
+\sigma_{11}^2 \\
+\sigma_{21} & \sigma_{22}^2 \\
+\vdots    & & \ddots \\
+\sigma_{K1} & \sigma_{K2} & \dots & \sigma_{KK}^2
+\end{bmatrix}.
+$$
+
+As all variables are standardized, the covariance matrix $\boldsymbol{\Sigma}$ reduces to the correlation matrix $\boldsymbol{\rho}$
+$$
+\boldsymbol{\rho} = 
+\begin{bmatrix}
+1 \\
+\rho_{21} & 1 \\
+\vdots    &   & \ddots \\
+\rho_{K1} & \rho_{K2} & \dots & 1
+\end{bmatrix}.
+$$
+Due to standardization, the residuals $\epsilon$ are normally distributed,
+$$
+\epsilon \sim \mathcal{N}(0, 1-R^2),
+$$
+and the proportion explained variance equals [@hoijtink_2012]
+$$
+R^2 = \sum_{k=1}^K \beta_k^2 + 2 \sum_{k < k'} \beta_k \beta_{k'} \rho_{kk'}.
+$$
+When we specify all regression coefficients $\beta_1, \dots, \beta_K$ as a factor of $\beta$, we can factor out this common term, replacing all coefficients by their ratio $r$ to $\beta$,
+$$
+\beta = \sqrt{\frac{R^2}{\sum diag(r \cdot r^T) + \sum r r^T \boldsymbol{\rho}}},
+$$
+and note that $\boldsymbol{\rho}$ only contains the lower triangle of the correlation matrix, including all diagonal elements. 
+
+
