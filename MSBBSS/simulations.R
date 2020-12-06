@@ -28,6 +28,22 @@ gen_norm <- function(r2, betas, rho, n) {
   return(bind_cols(Y = y, as.data.frame(X)))
 }
 
+gen_log <- function(r2, betas, rho, n) {
+  dat <- 
+    gen_norm(r2, betas, rho, n) %>%
+    mutate(Y = rbinom(n, 1, exp(Y) / (1 + exp(Y))))
+  
+  dat
+}
+
+gen_prob <- function(r2, betas, rho, n) {
+  dat <- 
+    gen_norm(r2, betas, rho, n) %>%
+    mutate(Y = rbinom(n, 1, pnorm(Y)))
+  
+  dat
+}
+
 ## Specify relative importance of the regression coefficients
 ratio_beta <- c(1,2,3,4)
 ## Specificy covariance matrix of the regression coefficients 
@@ -45,13 +61,10 @@ doubling_seq <- function(start, end = NULL, n = NULL) {
   if (is.null(n)) return(start * 2^(0:log2(end/start)))
 }
 
-n <- doubling_seq(start = 25, n = 15)
+n <- doubling_seq(start = 25, n = 6)
 
 ## number of simulations 
 nsim <- 50
-
-plan(sequential)
-
 
 ## Now, create a matrix containing the possible combinations of 
 ## the conditions
@@ -62,16 +75,50 @@ hypo <- paste0("V1<V2<V3<V4;V1=V2=V3=V4")
 
 
 output <- conditions %>%
-  mutate(data  = pmap(., function(nsim, r2, betas, n) gen_norm(r2, betas, rho, n)),
-         model = map(data,  ~lm(Y ~ ., .)),
-         bfs   = map(model, ~bain(., hypothesis = hypo)))
+  mutate(lin_dat  = pmap(., function(nsim, r2, betas, n) gen_norm(r2, betas, rho, n)),
+         log_dat  = pmap(., function(nsim, r2, betas, n) gen_log(r2, betas, rho, n)),
+         prob_dat = pmap(., function(nsim, r2, betas, n) gen_prob(r2, betas, rho, n)),
+         lin_mod  = map(lin_dat,    ~lm(Y ~ ., data = .)),
+         log_mod  = map(log_dat,   ~glm(Y ~ ., data = ., family = binomial(link = "logit"))),
+         prob_mod = map(prob_dat,  ~glm(Y ~ ., data = ., family = binomial(link = "probit"))),
+         bf_lin   = map(lin_mod,  ~bain(., hypothesis = hypo)),
+         bf_log   = map(log_mod,  ~bain(., hypothesis = hypo)),
+         bf_prob  = map(prob_mod, ~bain(., hypothesis = hypo)))
+
+
+test_stats <- output %>%
+  mutate(lin_t = map(lin_mod, function(x) x %>% summary %>% coef %>% .[,3]),
+         log_z = map(log_mod, function(x) x %>% summary %>% coef %>% .[,3]),
+         prob_z = map(prob_mod, function(x) x %>% summary %>% coef %>% .[,3])) %>%
+  unnest(c(lin_t, log_z, prob_z)) %>%
+  select(nsim, n, r2, lin_t, log_z, prob_z) %>%
+  unnest(c(lin_t, log_z, prob_z), .id = "ID") %>%
+  mutate("var" = rep(c("Int", "V1", "V2", "V3", "V4"), nrow(conditions))) %>%
+  group_by(n, r2, var) %>%
+  summarize(lin_t = mean(lin_t),
+            log_z = mean(log_z),
+            prob_z = mean(prob_z))
+
+test_stats %>% 
+  pivot_longer(cols = c(lin_t, log_z, prob_z), names_to = "model") %>%
+  ggplot(aes(x = n)) +
+  geom_line(aes(y = value, col = var)) +
+  facet_wrap(model ~ r2) +
+  theme_minimal()
+    
+
+output$prob_mod %>%
+  map(summary) %>%
+  map(coef) -> coefs
+coefs[[900]] -> coef900
+coef900[,4]
 
 output <- output %>%
   mutate(pmp = map(bfs, function(x) x$fit$PMPb[1]),
          pmpe = map(bfs, function(x) x$fit$PMPb[2])) %>%
   unnest(c(pmp, pmpe))
 
-
+conditions[900,]
 output %>%
   group_by(n, r2) %>%
   summarize(pmp = mean(pmp),
