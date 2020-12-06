@@ -103,7 +103,7 @@ test_stats %>%
   pivot_longer(cols = c(lin_t, log_z, prob_z), names_to = "model") %>%
   ggplot(aes(x = n)) +
   geom_line(aes(y = value, col = var)) +
-  facet_wrap(model ~ r2) +
+  facet_wrap(r2 ~ model) +
   theme_minimal()
     
 
