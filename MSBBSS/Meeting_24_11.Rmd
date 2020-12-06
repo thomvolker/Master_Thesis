@@ -20,11 +20,6 @@ Things to discuss:
     
 Simulate data from a multivariate normal model. 
 
-$$
-
-$$
-
-
 In the simulations, we consider a standardized regression model 
 $$
 y = \textbf{X}\beta + \epsilon,
