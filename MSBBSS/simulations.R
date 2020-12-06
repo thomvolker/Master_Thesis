@@ -4,6 +4,7 @@ library(MASS) # for drawing multivariate normal data
 library(tidyverse)
 library(magrittr)
 library(furrr)
+library(bain)
 
 ## Set seed 
 seed <- as.integer(123)
@@ -38,28 +39,59 @@ rho[rho != 1] <- 0.2
 r2 <- c(.02, .09, .25)
 
 ## specify the sample size
-n <- seq(25, 500, by = 25)
+doubling_seq <- function(start, end = NULL, n = NULL) {
+  if (is.null(end) && is.null(n)) stop("Either `end` or `n` must be specified")
+  if (is.null(end)) return(start * 2^(0:(n-1)))
+  if (is.null(n)) return(start * 2^(0:log2(end/start)))
+}
+
+n <- doubling_seq(start = 25, n = 15)
 
 ## number of simulations 
-nsim <- 100
+nsim <- 50
 
-plan(multisession)
+plan(sequential)
 
 
 ## Now, create a matrix containing the possible combinations of 
 ## the conditions
-conditions <- expand_grid(n = n, r2 = r2) %>%
+conditions <- expand_grid(nsim = 1:nsim, n = n, r2 = r2) %>%
   mutate(betas = map(r2, ~ make_coefs(., ratio_beta, rho)))
 
-data <- conditions %>%
-  mutate(data  = pmap(., function(r2, betas, n) gen_norm(r2, betas, rho, n)))
-  
+hypo <- paste0("V1<V2<V3<V4;V1=V2=V3=V4")
+
+
+output <- conditions %>%
+  mutate(data  = pmap(., function(nsim, r2, betas, n) gen_norm(r2, betas, rho, n)),
+         model = map(data,  ~lm(Y ~ ., .)),
+         bfs   = map(model, ~bain(., hypothesis = hypo)))
+
+output <- output %>%
+  mutate(pmp = map(bfs, function(x) x$fit$PMPb[1]),
+         pmpe = map(bfs, function(x) x$fit$PMPb[2])) %>%
+  unnest(c(pmp, pmpe))
+
+
+output %>%
+  group_by(n, r2) %>%
+  summarize(pmp = mean(pmp),
+            pmpe = mean(pmpe)) %>%
+  ggplot(mapping = aes(x = n, 
+                     y = pmp, 
+                     col = as.factor(r2), 
+                     group = as.factor(r2))) +
+    geom_line() +
+    geom_line(aes(y = pmpe), linetype = "dashed") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set1")
+
+
 data %>%
+  rowid_to_column(var = "ID") %>%
   mutate(model = map(data, ~ lm(Y ~ ., .))) %>%
-  mutate(R2 = map(model, broom::glance)) %>%
-  unnest(R2) %>%
+  mutate(stats = map(model, broom::glance)) %>%
+  unnest(stats) %>%
   group_by(r2) %>%
-  summarize(r.squared = mean(r.squared))
+  summarize(r2 = mean(adj.r.squared))
 
-
-
+         
