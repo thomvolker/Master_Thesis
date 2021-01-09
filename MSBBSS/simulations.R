@@ -44,6 +44,11 @@ gen_prob <- function(r2, betas, rho, n) {
   dat
 }
 
+get_bf <- function(bf) {
+  if (class(bf)[2] != "bain") stop("Input must have class bain")
+  bf$fit$BF.u
+}
+
 ## Specify relative importance of the regression coefficients
 ratio_beta <- c(1,2,3,4)
 ## Specificy covariance matrix of the regression coefficients 
@@ -64,7 +69,7 @@ doubling_seq <- function(start, end = NULL, n = NULL) {
 n <- doubling_seq(start = 25, n = 6)
 
 ## number of simulations 
-nsim <- 50
+nsim <- 500
 
 ## Now, create a matrix containing the possible combinations of 
 ## the conditions
@@ -73,20 +78,27 @@ conditions <- expand_grid(nsim = 1:nsim, n = n, r2 = r2) %>%
 
 hypo <- paste0("V1<V2<V3<V4;V1=V2=V3=V4")
 
+plan(multisession)
 
-output <- conditions %>%
-  mutate(lin_dat  = pmap(., function(nsim, r2, betas, n) gen_norm(r2, betas, rho, n)),
-         log_dat  = pmap(., function(nsim, r2, betas, n) gen_log(r2, betas, rho, n)),
-         prob_dat = pmap(., function(nsim, r2, betas, n) gen_prob(r2, betas, rho, n)),
-         lin_mod  = map(lin_dat,    ~lm(Y ~ ., data = .)),
+datasets <- conditions %>%
+  mutate(lin_dat  = future_pmap(., function(nsim, r2, betas, n) gen_norm(r2, betas, rho, n), .progress = TRUE, .options = future_options(seed = as.integer(123))),
+         log_dat  = future_pmap(., function(nsim, r2, betas, n) gen_log(r2, betas, rho, n), .progress = TRUE, .options = future_options(seed = as.integer(124))),
+         prob_dat = future_pmap(., function(nsim, r2, betas, n) gen_prob(r2, betas, rho, n), .progress = TRUE, .options = future_options(seed = as.integer(125))))
+
+models <- datasets %>%
+  mutate(lin_mod  = map(lin_dat,    ~lm(Y ~ ., data = .), .progress = TRUE),
          log_mod  = map(log_dat,   ~glm(Y ~ ., data = ., family = binomial(link = "logit"))),
-         prob_mod = map(prob_dat,  ~glm(Y ~ ., data = ., family = binomial(link = "probit"))),
-         bf_lin   = map(lin_mod,  ~bain(., hypothesis = hypo)),
+         prob_mod = map(prob_dat,  ~glm(Y ~ ., data = ., family = binomial(link = "probit"))))
+
+bain_out <- models %>%
+  mutate(bf_lin   = map(lin_mod,  ~bain(., hypothesis = hypo)),
          bf_log   = map(log_mod,  ~bain(., hypothesis = hypo)),
          bf_prob  = map(prob_mod, ~bain(., hypothesis = hypo)))
 
 
-test_stats <- output %>%
+
+
+test_stats <- bain_out %>%
   mutate(lin_t = map(lin_mod, function(x) x %>% summary %>% coef %>% .[,3]),
          log_z = map(log_mod, function(x) x %>% summary %>% coef %>% .[,3]),
          prob_z = map(prob_mod, function(x) x %>% summary %>% coef %>% .[,3])) %>%
@@ -105,14 +117,26 @@ test_stats %>%
   geom_line(aes(y = value, col = var)) +
   facet_wrap(r2 ~ model) +
   theme_minimal()
-    
 
-output$prob_mod %>%
-  map(summary) %>%
-  map(coef) -> coefs
-coefs[[900]] -> coef900
-coef900[,4]
 
+bain_out %>%
+  mutate(bf_lin_h1  = map_dbl(bf_lin, function(x) get_bf(x)[1]),
+         bf_log_h1  = map_dbl(bf_log, function(x) get_bf(x)[1]),
+         bf_prob_h1 = map_dbl(bf_prob, function(x) get_bf(x)[1]),
+         bf_h1      = bf_lin_h1 * bf_log_h1 * bf_prob_h1) %>%
+  group_by(n, r2) %>%
+  summarize(bf_lin_h1 = mean(bf_lin_h1),
+            bf_log_h1 = mean(bf_log_h1),
+            bf_prob_h1 = mean(bf_prob_h1),
+            BF_H1 = mean(bf_h1)) %>%
+  pivot_longer(cols = c(bf_lin_h1, bf_log_h1, bf_prob_h1)) %>%
+  ggplot(aes(x = n, y = value, col = as.factor(r2))) +
+  facet_wrap(~ name) +
+  geom_line() +
+  geom_abline(intercept = 1, slope = 0) +
+  theme_minimal()
+
+output$lin_mod[[3]] %>% summary
 output <- output %>%
   mutate(pmp = map(bfs, function(x) x$fit$PMPb[1]),
          pmpe = map(bfs, function(x) x$fit$PMPb[2])) %>%
@@ -124,11 +148,11 @@ output %>%
   summarize(pmp = mean(pmp),
             pmpe = mean(pmpe)) %>%
   ggplot(mapping = aes(x = n, 
-                     y = pmp, 
-                     col = as.factor(r2), 
-                     group = as.factor(r2))) +
-    geom_line() +
-    geom_line(aes(y = pmpe), linetype = "dashed") +
+                       y = pmp, 
+                       col = as.factor(r2), 
+                       group = as.factor(r2))) +
+  geom_line() +
+  geom_line(aes(y = pmpe), linetype = "dashed") +
   theme_minimal() +
   scale_color_brewer(palette = "Set1")
 
@@ -141,4 +165,7 @@ data %>%
   group_by(r2) %>%
   summarize(r2 = mean(adj.r.squared))
 
-         
+## to do next
+## create function that can combine multiple bain objects and returns PMPs
+## and bayes factors
+
