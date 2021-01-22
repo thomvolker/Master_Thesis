@@ -53,8 +53,8 @@ indent: true
 tables: true
 header-includes:
   - \usepackage{caption}
-bibliography: "/Users/thomvolker/Documents/Master_Thesis/thesis_literature.bib"
-csl: "/Users/thomvolker/Documents/styles/apa-6th-edition.csl"
+bibliography: "../../thesis_literature.bib"
+csl: "../../apa-6th-edition.csl"
 link-citations: yes
 linkcolor: blue
 ---
