@@ -1,0 +1,121 @@
+---
+title: |
+  | Literature study
+  | 
+  | 
+  |
+  |
+  |
+  | **Bayesian Evidence Synthesis with multiple studies on trust**
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+author: |
+  | Thom Volker (5868777)
+  |
+  |
+  | Supervisor: Vincent Buskens
+  | Co-supervisor: Werner Raub
+  |
+  |
+  | *Sociology and Social Research Master's programme*
+  |
+  | *Utrecht University*
+  |
+  |
+  |
+  | `r format(Sys.time(), '%B %d, %Y')`
+  |
+  |
+  | `r paste0("Word count: ", wordcountaddin::word_count())`
+  |
+  |
+  |
+  | *Candidate journals: Sociological Methods & Research*
+output: 
+  bookdown::pdf_document2:
+    number_sections: true
+    df_print: kable
+    highlight: pygments
+    toc: true
+mainfont: Calibri
+sansfont: Calibri
+linestretch: 1.25
+fontsize: 10pt
+params: 
+  !r Sys.setlocale("LC_TIME", "C")
+date: 
+indent: true
+tables: true
+header-includes:
+  - \usepackage{caption}
+bibliography: "../../thesis_literature.bib"
+csl: "../../apa-6th-edition.csl"
+link-citations: yes
+linkcolor: blue
+---
+
+# Literature
+
+Research on economic sociology and social dilemma research on trust problems in exchange relations often studies how trust depends on prior exchange and interactions between the partners.
+
+- See Raub & Buskens (2008). "Theory and Empirical Research in Analytical Sociology: The case of Cooperation in Problematic Social Situations." Analyse und Kritik.
+- See Buskens & Raub (2013). "Rational Choice Social Research on social dilemmas: Embeddedness effects on trust." Handbook of Rational Choice Social Research.
+
+# Articles from @kuiper_combining_2013
+
+## Batenburg, Raub & Snijders (2003)
+
+Studied the extent to which buyers of information technology (IT) products trust their sellers using a survey on about 1,000 buyers of IT products. One of their hypotheses is that if the buyer has had positive experiences with the seller from transactions in the past, the buyer trusts the seller more in the present transactions. To test this hypotheses, they analyze the effect of the variable "past" (a measure for the amount of positive past experiences) on the dependent variable "lack-of-trust" which is measured by the extent to which the buyer invests in management of the relation such as writing a contract to prevent the seller from untrustworthy behavior. This was measured using a linear regression model with additional independent (control) variables.
+
+## Rooks et al (2000)
+
+Test the same hypothesis as Batenburg et al. (2003) with similar variables, using a vignette experiment with hypothetical transactions. In this experiment, purchase managers decide how much time and effort they want to invest to prevent untrustworthy behavior of their seller, while the past experiences of the buyer with the seller are one of the variables describing the hypothetical transactions, using a linear regression model.
+
+## Buskens & Weesie (2000)
+
+Use another vignette experiment to test whether past experiences have an effect on trust of students in a secondhand car dealer. Here, trust is measured by the choice between two dealers (as a dichotomous variable) using probit regression.
+
+## Buskens, Raub & Van der Veer (2010) 
+
+Test whether past experiences have an effect on trust in a laboratory experiment in which subjects have to decide whether to trust another subject. Because subjects play a series of these interactions with the same partner, subjects can make their behavior conditional on the partner's behavior in the past. The choice between trusting or not trusting is again a dichotomous variable and is analyzed via a three-level logistic regression.
+
+# Literature from @buskens_raub_handbook_2013
+
+## Laboratory experiments
+
+### Effects of dyadic embeddedness
+
+@camerer_weigelt_1988 initiated experimental research that aims at carefully testing hypotheses on behavior in *finitely repeated Trust Games* with incomplete information, with follow-up studies by @neral_ochs_sequential_1992, Anderhub, Engelmann and Güth (2002) and Brandths and Figueras (2003). See Camerer (2003: 446-453) for a more detailed overview of these experiments. While experiments on one-shot Trust Games focus on payoff effects and reveal that these effects, in particular effects of risk and temptation, are strong, experiments on repeated Trust Games focus on embeddedness effects. Experiments confirm that trust as well as trustworthiness are high in early rounds and decrease when the end of the repeated game approaches (dyadic control). Trust is almost absent after any abuse of trust, while trust remains relatively high as long as trust has been honored (dyadic learning). However, the trustor's tendency to place trust as long as trust has been honored does not increase as the end of the game comes nearer. This is consistent with the theory, since trustors have to realize that trustees with an incentive to abuse trust also have an incentive to make trustors believe that they do not abuse trust, while these trustees will in fact abuse trust toward the end of the game. 
+
+Brandts and Figueras (2003) also find that trust and trustworthiness increase with the probability that a trustee has no incentive to abuse trust. Summarizing, the equilibrium described above for the finitely repeated Trust Game predicts quite some global patterns of behavior reasonably well. However, the experiments of @neral_ochs_sequential_1992, Anderhub, Engelmann and Güth (2002) and Brandts and Figueras (2003) also show that behavior of subjects does not completely follow the predicted equilibria (e.g., it is predicted that in phase 2 of the game in which trustors and trustees with an incentive to abuse trust both randomize, the probability that trustors trust increases with the temptation for the trustee to abuse trust). This implication is both counterintuitive and inconsistent with experimental findings.
+
+Results from other experiments are quite in line with these findings. Gautschi (2000) reports findings for finitely repeated Trust Games that comprise two or three rounds of play. He finds that positive past experience matters (dyadic learning) and that the number of remaining rounds to be played also increases trust (dyadic control). For a more contextualized setting with buyers and sellers and an incentive structure similar to the Trust Game, Kollock (1994) finds similar evidence. Still, the studies by Gautschi and Kollock report quite some untrustworthy behavior by trustees very early in the games. This can be explained by the difference that subjects in the studies of Gautschi (2000) and Kollock (1994) play relatively few games, while subjects in the studies by @camerer_weigelt_1988 and the related follow-up studies play very many games (and they thus can "learn" that it is beneficial to behave opportunistically at a later moment).
+
+Engle-Warnink and Slonim (2004, 2006) compare *finitely* and *indefinitely repeated games*. In principle, the trustor's opportunities to exercise control in an indefinitely repeated game with constant continuation probability are the same in round $t$ and in round $t+1$. Still, the authors find decreasing trust over time in such games. However, this decrease is much smoother than in the finitely repeated games. This can be understood in the sense that learning effects in terms of negative experiences reduce trust over time, and subsequently trust seems to be difficult to restore. On the other hand, trust remains reasonably high because control opportunities do not diminish over time and enable some pairs to continue to trust each other. An additional explanation for decreasing trust in indefinitely repeated games might be that subjects believe that after many repetitions of the game, the probability increases that a specific round will be the last one, even if experimenters do their very best to make it apparent that the continuation after every round is constant (e.g., by using a publicly thrown die).
+
+While there are many experiments on the Investment Game, only few use the finitely repeated Investment Game. The findings of Cochard, Nguyen Van and Willinger (2004) are in line with empirical regularities that have been found for the Trust Game. Subjects send more in the Investment Game if there is a longer future ahead (dyadic control), but if receivers do not return enough, they stop sending (dyadic learning). In early rounds, trustors send more if the trustees return more. While Cochard, Nguyen Van and Willinger refer to this finding as a reciprocity effect, it can also be interpreted as a learning effect. Again, there is a strong endgame effect, although it is observed very late in the games (trustees start to return less in the last-but-one-round). Trustors react on low return rates by sending less in the last round, but there is no significant evidence that trustors send less as a pure result of being in the last round.
+
+### Effects of network embeddedness
+
+Experiments with Trust Games or Investment Games that include network embeddedness are still rare. Bolton, Katok and Ockenfels (2004; see also Bolton and Ockenfels, 2009) compare one-shot Trust Games that are isolated encounters in the strict sense, finitely repeated Trust Games (with the same partner), and a third treatment in which subjects play multiple one-shot Trust Games with different partners but obtain information about the past behavior of their partners in interactions with other subjects (for a similar setup and results, see Bohnet and Huck, 2004). In the one-shot Trust Games, trust and trustworthiness decline quickly after subjects gained some experience. Trust and trustworthiness remain high in the repeated Trust Games and collapse only in the last couple of rounds. This finding resonates with evidence on effects of dyadic embeddedness. When subjects play multiple one-shot Trust Games with different partners but obtain information on past behavior of their partners in interactions with other subjects, there is initially less trust and trustworthiness than in the finitely repeated Trust Game setting, but trustees apparently learn fast enough that they have a considerable problem if they do not honor trust. In this treatment, trust and trustworthiness stabilize for some time in the middle of the series of interactions, although at a somewhat lower level than in the repeated Trust Game setting. Again, trust collapses in the last few rounds. Bolton, Katok and Ockenfels (2004) interpret their third treatment as an experimental implementation of an institutionalized reputation system that is common for online transactions. The treatment could also be interpreted as a complete network in which information diffusion is perfect. Note that the Bolton, Katok and Ockenfels reputation treatment involves opportunities for learning as well as control through third parties. While indicating that network embeddedness matters, it remains unclear to which mechanism learning or control or both, trust can be attributed.
+
+Buskens, Raub and Van der Veer (2010) introduce a network setting with subjects playing finitely repeated Trust Games in groups of three (see also Barrera and Buskens, 2009 for a related study on the Investment Game). 
+
+
+
+# Questions meetings
+
+To what extent do we want to head into a new direction? The research question has to be about whether past experiences have a positive effect on trust.
+
+# Literature
+
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\noindent
+
+<div id="refs"></div>

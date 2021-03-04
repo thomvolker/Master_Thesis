@@ -1,0 +1,10 @@
+---
+title: "Fun readings"
+author: "Thom Volker"
+date: "2/12/2021"
+output: html_document
+---
+
+# Additional fun literature list
+
+***Royall, R. 1997. Statistical Evidence: A Likelihood Paradigm. London, UK: Chapmanand Hall.*** Describes how evidence for an hypothesis at hand can be quantified using the likelihood ratio test.

@@ -1,0 +1,262 @@
+---
+title: |
+  | Initial plan 
+  | 
+  | 
+  |
+  |
+  |
+  | **Post-meeting report 16-02**
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+author: |
+  | Thom Volker (5868777)
+  |
+  |
+  | Supervisor: Vincent Buskens
+  | Co-supervisor: Werner Raub
+  |
+  |
+  | *Sociology and Social Research Master's programme*
+  |
+  | *Utrecht University*
+  |
+  |
+  |
+  | `r format(Sys.time(), '%B %d, %Y')`
+  |
+  |
+  | `r paste0("Word count: ", wordcountaddin::word_count())`
+  |
+  |
+  |
+  | 
+output: 
+  bookdown::pdf_document2:
+    number_sections: true
+    df_print: kable
+    highlight: pygments
+    toc: true
+mainfont: Calibri
+sansfont: Calibri
+linestretch: 1.25
+fontsize: 10pt
+params: 
+  !r Sys.setlocale("LC_TIME", "C")
+date: 
+indent: true
+tables: true
+header-includes:
+  - \usepackage{caption}
+  - \usepackage{wrapfig}
+bibliography: "../../thesis_literature.bib"
+csl: "../../apa-6th-edition.csl"
+link-citations: yes
+linkcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Requirements
+
+To translate the ideas into a realistic and reasonable project given the time available:
+
+- Different studies with different designs (not necessarily new data, except when there is an exceptional possibility to gather new data relatively easily while contributing significantly to the research).
+- An interesting research question that is both answerable given the method and the time frame, as well as interesting substantively.
+- In terms of complexity, the study should be located between the initial study (Kuiper, Buskens, Raub & Hoijtink) and the extended study (Lion et al.).
+
+Given these requirements, the focus could be on control effects on the behavior on the trustee within network embeddedness. Namely, control effects within network embeddedness do not show up consistently (in contrast to for example learning effects and control effects in dyadic embeddedness). However, when we incorporate repeated prisoner's dilemma studies, it seems natural to incorporate dyadic learning as well.
+
+Studies that focus on control effects within network embeddedness are, among others, the studies by Anna, Rense, Joris, Vincent & Davide, Dal Bo & Frechette. These studies seem to be varying enough within the bounds of feasibility on the one side, and substantially informative on the other side.  Additionally, data from the *testosterone experiment* can be considered, as well as data that Rense collected in Stanford. In repeated prisoner's dilemmas, it seems natural to focus on the first round, as no learning effects have to be considered (as no learning could have taken place before the first round). 
+
+Note that differences between studies can be that in some, embeddedness is endogenous in terms of existing ties between participants (network data) or exogenous (induced by the experiment). 
+
+# Cooperation through investments in repeated interactions and contractual agreements: An experimental study
+
+### Sokolova, A., Buskens, V., & Raub, W. (2021)
+
+Kollock (1994) showed that actors cope with social dilemma problems through engaging in long-term relations with repeated transactions (experiment). 
+
+DiMaggio and Louch (1998) have shown that economic exchange with social dilemma features induces actors to prefer exchange partners with whome they interact repeatedly because they share other and noncommerical relations.
+
+Brown et al (2004) studied the endogenous formation of long-term employment relations as a means of mitigating principal-agent problems, a well-known case of social dilemmas in the labor market.
+
+Raub et al. (2019) presented a theoretical model of the formation of relations with repeated interactions and the effects of repeated interaction on cooperation in a social dilemma.
+
+Models of network effects on cooperation in social dilemmas and of investments in network formation are in various respects similar to models on the formation and effects of repeated interactions. Such network models have been developed, for example, in Raub et al. (2013) and an experimental test is reported in Frey et al. (2019). Related experimental work on the formation and effects of networks in a labor market context with social dilemma features is presented in Gërxhani et al. (2013).
+
+We model the effects of repeated interactions and of contractual agreements on cooperation in a social dilemma and experimentally test hypotheses on such effects. In this repsect, our results are not new: our model captures well-known effects and experimental work on such effects can be seen as a replication of earlier work.
+
+- Our new contribution is that we likewise model what these effects imply in the first place for investments in the formation of repeated interactions as well as for investments in contractual agreements and that we provide the first experimental test of hypotheses on such investments.
+
+- We also address theoretically and experimentally, the choice between investments either in the formation of repeated interactions or in contractual agreements, with hypotheses derived from assumptions on strict game-theoretic rationality as well as purely self-regarding preferences.
+
+Specifically, we study theoretically and experimentally the deeper question whether actors (behave as if they) anticipate the effects of repeated interactions and of contractual agreements. We analyze how "social organizations", namely repeated interactions or contractual agreements affect behavior in a social dilemma, and we simultaneously address how such social organization emerges emerges itself as a result of rational action. 
+
+## Theory and hypotheses
+
+They consider three extensions of a regular prisoners dilemma (PD) with payoffs $\{(C_1, C_2) = (60, 60); (D_1, C_2) = (100, 0); (C_1, D_2) = (0,100); (D_1, D_2) = (20,20)\}$.
+
+@. $\Gamma^{\text{repeat/oneshot}}$ - actors decide first of all whether they subsequently play a one-shot PD or a repeated PD and then interact with another actor in the chosen game.
+@. $\Gamma^{\text{contract/oneshot}}$ - actors decide first of all whether they subsequently play a one-shot PD or a variant of the PD that includes contractual agreements, and subsequently interact with another actor in the chosen game.
+@. $\Gamma^{\text{repeat/contract}}$ - actors choose between playing the repeated PD or the PD with contractual agreements and then play the chosen game.
+
+Playing a repeated PD or a PD with contractual agreements is costly. Actors thus face a trade-off between the expected beneficial effects of repeated interactions and contractual agreements on the one hand, and on the other the costs of arranging for such beneficial effects. This avoids that choosing to play a game with beneficial effects become a trivial affair. 
+
+We employ backward induction for analyzing $\Gamma$ and specify behavior under standard game-theoretic assumptions. Specifically, we assume that $\Gamma$ is played as a non-cooperative game with complete information and common knowledge of the extensive form of the game. We also assume game theoretic equilibrium behavior (i.e., we assume that actors play subgame perfect equilibria). With respect to equilibrium selection, we assume that the solution of a symmetric game is a symmetric equilibrium and also assume payoff dominance as criterion for choosing between equilibria. In addition to these rationality assumptions, we assume self-regarding preferences in the sense of *utility = own payoffs = own money*. The term *equilibrium* always refers to a *subgame perfect equilibrium*. 
+
+- H1: The likelihood of investments in repeated interactions or contracting agreements decreases with the costs of investments.
+- H2: The likelihood of cooperation increases after actors decide to invest in repeated interactions or contracting agreements.
+- H3: The likelihood of investments in stage 0 decreases with the investments costs.
+- H4: The likelihood of cooperation is higher in $PD^{\text{contract}}$ than in the one-shot PD.
+- H5: The likelihood of investments in contractual agreements is higher than the likelihood of investments in repeated interactions.
+
+## Results
+
+### Results on investments
+
+#### Repeated interactions 
+
+- The likelihood of investments in repeated interactions is higher under low investment costs than under high investment costs and higher under medium investment costs than under high investment costs. There is however no significant different between the effects of medium investment costs and low investment costs. 
+- If an actor invests more often in contractual agreements in Part 2, it is more likely that the actor will invest in repeated interactions in Part 3. There is however no interaction between previous earnings and previous investments.
+
+#### Contractual agreements
+
+- People are less likely to invest as the investment costs increase. Also, there is a positive relation between the number of previous investments and current investments.
+
+#### Repeated interactions or contractual agreements
+
+- People more often choose contractual agreements than repeated interactions, but there is no tendency such that participants choose the games in which they earned more in Parts 2-3.
+- When we analyse the preference for repeated interactions or contractual agreements indirectly (i.e., repeated interactions versus one-shot games; contractual agreements versus one-shot games), contractual agreements are not chosen more often, unless all control variables are accounted for.
+
+### Effects on cooperation 
+
+- Engaging in repeated interactions and/or contractual agreements has a significant, positive effect on cooperation.
+- Some studies argue that endogenously established mechanisms of cooperation (such as in this study) are more effective in promoting cooperation than exogenous ones (Bohnet and Huck, 2004; Dal Bó et al., 2010; Frey et al., 2019; Gürerk et al., 2006; Schneider and Weber, 2013; Simpson & Willer, 2015)/
+
+
+# Trust in triads: An experimental study
+
+## Theory
+
+This study focuses on learning and control effects, and tries to disentangle these separate sources of variation. 
+
+- Learning - trustors can learn that a trustee has been trustworthy in the past, and may infer that the trustee is likely to be trustworthy now as well.
+- Control - the more opportunities a trustor has to sanction present behavior of the trustee in future interactions, the more likely the trustee is to realize that his/her short term gains from abusing trust do not compensate for the long term losses he/she would incur from sanctions of the trustor.
+
+Next to the distinction between learning and control effects, there can be made a disctinction between dyadic and network embeddedness (see e.g. Buskens & Raub, 2002; Yamagishi & Yamagishi, 1994: 138-139).
+
+- Trustors can learn through their own experiences or through experiences of others.
+- Sanctions (positive and/or negative) can be executed by both the trustor or by third parties such as other trustors of the trustee.
+
+This study improves in five ways on earlier research on this topic (see Buskens & Raub, 2008 for an overview).
+
+1. Most of the available evidence suffers from the difficulty of disentangling learning and control effects. The experimental design in this study allows to more clearly distinguish between learning and control effects.
+2. The interpretation of empirical findings on embeddedness effects in survey data is often problematic, because embeddedness may be endogenous in that actors choose with whom to interact/exchange information (see e.g. Goyal, 2007; Jackson, 2008; Buskens, 2002 for a more specific overview of problems in interpreting findings on embeddedness effects due to endogeneity of embeddedness characteristics). Embeddedness characteristics in this study are exogenous, rather than endogenous.
+3. An additional problem of survey research on effects of network embeddedness is that third party information can be problematic (Lorenz, 1988; Raub and Weesie, 1990: 648; Williamson, 1996: 153-155). Why would a trustor provide information if providing information is costly in terms of time and effort? Trustors who are competitors may even have incentives to provide misleading information about the trustee's behavior. Our design ensures the abscence of incentive problems.
+4. Studies that do a rather good job at disentangling different kinds of embeddedness effects (Rooks et al., 2000; Buskens & Weesie, 2000) employ vignette experiments and thus rely on subjects' responses to hypothetical situations without "real incentives".
+5. Previous empirical work studying embeddedness effects on trust typically focuses on testing hypotheses on trustfulness of the trustor, neglecting trustworthiness of the trustee. 
+
+## Hypotheses
+
+- H1 (dyadic learning - trustor): the more a trustor's trustfulness has been honored in the past, the more likely it is that this trustor is trustful.
+
+- H2 (network learning - trustor): the more information a trustor has that trustfulness of the other trustor has been honored in the past, the more likely it is that this trustor will be trustful.
+
+- H3 (dyadic control - trustee): the more rounds left, the higher the likelihood that trust will be honored; the likelihood of trustworthiness decreases faster in the last few rounds than in earlier rounds.
+
+- H4 (network control - trustee): in the condition with full information exchange between trustors, compared to the condition with no information exchange, the likelihood of trustworthiness is higher and will decrease less in earlier rounds. The end-game effect will be stronger in games with trustor 2 than in games with trustor 1.
+
+- H5 (dyadic control - trustor): the more rounds left, the higher the likelihood of trustfulness; the likelihood of trustfulness decreases faster in the last few rounds than in earlier rounds (end-game effect).
+
+- H6 (network control - trustor): in the condition with full information exchange between trustors, compared to the condition with no information exchange, the likelihood of trustfulness is higher and will decrease less in early rounds. The end-game effect will be stronger for trustor 2 than for trustor 1.
+
+## Results
+
+### Trustfulness
+
+In the full model, the main effect of having full information vanishes, indicating that the difference between the experimental conditions is mainly due to the variables representing learning and control effects. 
+
+- Dyadic learning trustor: Trustors are more likely to place trust after experiencing more honored trust themselves (H1 confirmed).
+- Network learning trustor: When trust placed by the other trustor has been honored more often, trustfulness increases as well (although not significantly), while trustfulness decreases (significantly) when trust placed by the other trustor has been abused (H2 mostly confirmed). Note that information on abused trust is about equally important, regardless of whether it is the trustor's own trust or the other trustor's trust is abused.
+- Dyadic control trustor: The likelihood that trust is placed decreases with the number of rounds that is already played. Also, there are strong end-game effects, especially in round 15, when there is no control left (H5 confirmed).
+- Network control trustor: There is no effect of being in the full information condition on the likelihood that trust is placed, and the interaction of the number of rounds left with being in the full information condition is not significant. The end-game effects are about two times stronger in the full-information condition than in the no information condition, but the end-game effects do not start later in the full-information condition. Therefore, it might well be that the steeper network effects are mainly due to earlier experiences of honored trust in the full-information condition through which the level of trustfulness is higher before it starts to decrease (H6 not confirmed).
+
+### Trustworthiness
+
+- Dyadic and network control trustee: As the number of rounds to play (control) decreases, the likelihood of honoring trust decreases. However, the interaction term with the condition with full information exchange shows that dyadic control is only present in the condition without information exchange between the trustors. Apparently, control is so strong already without information exchange, that the likelihood of honoring trust remains at or even above 90% throughout the first 13 rounds. The fact that there is a positive main effect of having full information and that trustworthiness does not decrease in the first 13 rounds in the full-information condition indicates that there is an additional control effect of network embeddedness over and above dyadic control (H5 and H6 confirmed). 
+- There is no effect of future interactions (dyadic control) in the full information condition, while there is an effect of dyadic control in the "no information" condition. However, there also is an effect of being in the full information condition by itself. There also is a negative effect of being in the final two rounds on trustworthiness, but this effect is not more attenuated in the full information condition. 
+
+## Discussion
+
+Overall, there seem learning effects on both the dyadic as well as the network level on trustors, with dyadic learning effects being slightly stronger than network learning effects. While dyadic control effects on trustfulness are found, network control effects on trustfulness are not found (not beyond dyadic control). Trustees are more trustworthy under network embeddedness, implying that trustors have more positive learning experiences that, in turn, lead to more trustfulness. For trustors, network control does not seem to add to the effects of dyadic control. For trustees, there are both dyadic control effects and network control effects on trustworthiness.
+
+These findings correspond to the results from survey research on trust problems in buyer-supplier relations (Buskens, 2002: Ch. 5; Batenburg et al., 2003; Rooks et al., 2006). This research focuses on how embeddedness affects trustfulness of buyers in the sense of investing less in costly contractual safeguards that mitigate bad performance, including opportunistic behavior, of suppliers such as delivery of inferior quality, delivery delays or bad service. More sanction opportunities for buyers through contacts and information exchange with other clients of their own suppliers, for example, are associated with better supplier performance (Rooks et al., 2006). Also, dyadic control based on buyers' sanction opportunities through expected future business with the supplier affects buyers' investments in costly contractual safeguards (Batenburg et al., 2003). However, there is hardly any empirical evidence for effects of network control on buyer behavior (Buskens, 2002). This may be due to the fact that a trustor needs to reason "more steps ahead" before having a good reason to react to network control through future sanction opportunities of *other* trustors. It may be less likely that actors reason so many steps ahead, especially in unfamiliar settings such as in the experiment (Binmore, 1998: chapter 0.4.2; Kreps, 1990b; Camerer, 2003 for general arguments in this direction). Also, there may be individual variation with respect to the ability to reason ahead. For example, Palacios-Huerta and Volij (2008, 2009) offer empirical evidence from field data and experiments indicating that experienced actors' behavior correspons more closely to equilibrium behavior than the behavior of less experienced actors, and that experienced actors are better able to reason ahead.
+
+Could it be the case that the effect of network embeddedness is just not strong enough to reach beyond the effect of dyadic embeddedness. Namely, Round15TR2Full is the effect of "only" 36 cases. 
+
+# Trust in triads: Experience effects
+
+### Van Miltenburg, Buskens & Raub (2012)
+
+Van Miltenburg, Buskens & Raub (MBR) consider a finitely repeated trust game (FRTG) between one trustee and two trustors. The sequential equilibrium model employed for triads assumes incomplete information of the trustors about the utility from abusing trust of the trustee and thus includes incentives for reputation building. Roughly, the trustee's behavior in the current Trust Game affects whether or not trust is placed in future Trust Games. Once again, dyadic embeddedness and network embeddedness are considered.
+
+In Buskens, Raub and Van der Veer (2010), no support for the hypothesis on network control effects for trustee behavior where found. The reason hereof may be limited experience of the subjects with the interaction setting. Namely, it has been argued that predictions based on game-theoretic models will be more successful when subjects are experienced, especially when the game is complex and unfamiliar to the subjects (Binmore, 1998; Kreps, 1990; Camerer, 2003). These claims have been supported by among others Camerer and Weigelt (1988) and Neral and Ochs (1992).
+
+## Hypotheses
+
+- H1: The likelihood that trust will be placed and honored in early rounds increases with experience.
+- H2: The likelihood that trust will be placed and honored in final rounds decreases with experience. 
+
+In addition, game-theoretic models predict that the endgame effect should start later in the condition with network embeddedness, because in this condition control can be exercised by other trustors as well.
+
+- H3.1: Given full information exchange between trustors, the endgame effect will start later than under no information exchange between trustors.
+- H3.2: With experience, the difference between the endgame effect under full versus no information exchange between trustors increases.
+
+## Results
+
+Trust is placed significantly more often in the first five rounds the later a finitely repeated Trust Game (FRTG) was played. Also, as experience increases, trust is honored significantly more often in the first three rounds. Thus, H1 (experience on trust in first rounds) is supported. The trustee does not need much experience to realize he can abuse trust in round 15. With experience, the trustor realizes that he has to be reluctant with placing trust in round 15, as indicated by the negative effect of experience on trustworthiness. Also, there is a negative effect of experience on trustworthiness in round 14, but not on trustfulness in this round. Overall, there also is considerable support for H2 (experience on trust in final rounds).
+
+In the final rounds, trust is placed significantly more often in the full information condition, which suggests a network control effect. However, after controlling for learning (i.e., number of positive past experiences), it appeared that the higher trustfulness is due to more trustworthiness of trustees in earlier rounds, rather than due to a network control effect (how is learning operationalized???). **However, personally, I doubt whether this finding is correct. There namely seems to be a rather clear control effect in the sixth session. After round 10 for the trustors, and after round 13 for the trustees.**
+
+The network control effect also does not increase with experience. Also note that the network effect for trustworthiness is not that convincingly reconfirmed in this new experiment. There is an effect of full information in round 13, but this effect seems to become weaker with experience.
+
+\begin{figure}[h]
+  \caption{Finitely repeated trust games with 6 sessions and two trustors and one trustee (triads).}
+    \centering
+  \includegraphics[width=0.9\textwidth]{trust_games_MBR_experience_effects.jpg}
+\end{figure}
+
+### Personal idea about article
+
+Note - BRV showed that trust being abused of the other trustor has the same influence on trust being placed by the trustor as compared to the trustor's own trust that is abused. So, over the games, trustee's may learn that abusing trust before round 15 is useless, as trustors after that move will not place trust anymore (note that in the no-information condition, only the trustor whos trust is abused will not place trust anymore). However, the trustee may also learn that in round 15 no trust is placed at all, so you could start abusing trust in round 14 already, if you want to have some additional gains before this possibility vanishes. Maybe this already happens before round 15, which would explain why the proportion of trustors that places trust in round 14 is already quite low (and is in line with the trend that some more trustees already begin to abuse trust in round 13).
+
+An idea could be to employ an adaptive design, in which trustee behavior in interaction with trustor 1 is alternately shared and not shared with trustor 2 and vice versa. This can be done using a repeated design, but even in a one-shot game. 
+
+## Conclusion 
+
+The experiment shows that experience affects behavior in the repeated Trust Game, and that various behavioral regularities of more experienced subjects correspond more closely to the game theoretical equilibrium model. 
+
+
+# Ideas
+
+1. Sokolova - Could it be that people who choose a one-shot PD differ systematically from those people who choose a repeated PD in terms of behavior? That is, could we do a similar experiment in which actors give their preference, but are still randomly assigned to one of the two conditions? Specifically, I refer to the idea that maybe people who want to have longer interactions are more willing to cooperate a priori, while people who only want to defect initially choose to play a oneshot PD. 
+
+2. Sokolova - Just a question - if the payoff of mutual cooperation would be lower, say $(40, 40)$ and the other payoffs remain $\{(0,100); (100, 0); (20, 20)\}$, does it happen that actors coordinate in such a way that they would alternately cooperate and defect, such that they alternately get payoff $100$, pay-off $0$. I can imagine that with a continuation probability of .75 you will not observe this behavior, but maybe if the continuation probability equals .90 or so? 
+
+3. Trust in triads - future research - we would expect the effects of network control on trustor behavior to be more easily found when trustors play repeated Trust Games with information exchange between trustors more often, specifically when they are also in the role of the trustee in some of those repeated games (see Bednar and Page, 2007; Bednar et al., 2008). 
+
+# Question
+
+1. Evaluating only the first move could show evidence for control. However, it could also show for example that the possible gains of cooperation, are much higher than the possible losses from not at least trying to cooperate. Namely, if the trustor does not places trust after the trustee abuses trust once, you could maximally lose 10 compared to never placing trust (10 * 15 rounds = 150; 1 * 0 + 14 * 10 = 140). Thus, if the trustee cooperates at least once, the possible losses of your trust being abused are compensated by cooperating at least once. In a one-shot game, for example, the potential losses of trust being abused cannot be compensated, so are relatively much larger as compared to the repeated TG. 
+
+2. Why is the questionnaire always (? maybe just often) filled in after the experiment? Because I can imagine that general feelings of trustfulness decrease after someone does not honor trust in the first round already. 
+
+3. Abuse has an equally strong effect on trustfulness, regardless of the trustor's own trust was abused, or the other trustor's trust was abused. Maybe this is realized by the trustor, and therefore the trustor is not so much concerned with the rounds left in the two games separately, but more by the number of rounds left that are possibly influenced by his/her decision. That is, the total number of rounds left over the two information conditions, or a separate number of rounds left for trustor 1 and trustor 2.
