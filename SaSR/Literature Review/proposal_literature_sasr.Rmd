@@ -1,0 +1,88 @@
+---
+title: |
+  | 
+  | 
+  | 
+  |
+  |
+  |
+  |
+  |
+  | **Proposal**
+  |
+  |
+  |
+  |
+  | Embeddedness effects on cooperation in social dilemmas: Disentangling the ways in which control affects cooperation
+  |
+  |
+  |
+  |
+  |
+author: |
+  | Thom Volker (5868777)
+  |
+  |
+  | Supervisors: Vincent Buskens & Werner Raub
+  |
+  |
+  | *Sociology and Social Research Master's programme*
+  |
+  | *Utrecht University*
+  |
+  |
+  |
+  | `r format(Sys.time(), '%B %d, %Y')`
+  |
+  |
+  | `r paste0("Word count: ", wordcountaddin::word_count())`
+  |
+  |
+  |
+  | 
+output: 
+  bookdown::pdf_document2:
+    number_sections: true
+    df_print: kable
+    highlight: pygments
+    toc: false
+mainfont: Calibri
+sansfont: Calibri
+linestretch: 1.5
+fontsize: 11pt
+params: 
+  !r Sys.setlocale("LC_TIME", "C")
+date: 
+indent: true
+tables: true
+header-includes:
+  - \usepackage{caption}
+  - \usepackage{wrapfig}
+  - \usepackage{booktabs,floatrow}
+bibliography: "../../thesis_literature.bib"
+csl: "../../apa-6th-edition.csl"
+link-citations: yes
+linkcolor: blue
+---
+
+\newpage
+
+# Proposal
+
+Social dilemmas are at the core of everyday life. Students may anticipate a good grade with minimal effort by free-riding on the work of others in their group, researchers could obtain yet another publication by letting their collaborators do the lion's share of the required work [@corten_buskens_cooperation_2020] and a car dealer may hide several vehicle defects when selling a second-hand car to a relatively uninformed customer [@buskens_weesie_experiment_2000]. The benefits from acting opportunistically become attenuated in isolated encounters, that is, one-shot interactions where the actors are not involved in a common network with third parties, nor do they have a shared history or a shared future. However, most interactions do not occur in social isolation, but are characterized by possibilities of future interactions, while the actors involved may share a common network. Thus, these interactions are said to be embedded, dyadically, in a network, or both. 
+
+Embeddedness has been argued to protect against opportunistic behaviour, and may thus foster cooperation [@buskens_raub_handbook_2013]. Specifically, embeddedness may reduce the returns of opportunistic behaviour relative to the potential benefits of future interactions, by opening doors for retribution, a mechanism called control. In the dyadic sense, actors who endured opportunistic behaviour by their partner may refuse to cooperate with this partner in the future; in the embedded sense, opportunistic behaviour may become known to third parties, who could in turn refuse to cooperate with the misbehaving actor as well. Therefore, any actor has to balance short-term incentives for opportunistic behaviour with the long-term costs hereof. In the game-theoretic literature, a second distinction is made between endogenous and exogenous embeddedness, referring to the fact that actors may be personally involved in the decision concerning with whom to interact, or may be designated to interact with one another, respectively.
+
+In the upcoming literature review, I will examine in what ways these four mechanisms (endogenous and exogenous dyadic control; and endogenous and exogenous network control) affect cooperation between strategically interdependent actors, from a game-theoretic perspective. The positive effect of exogenous dyadic control on cooperation is rather established [e.g. @dal_bó_fréchette_determinants_2018; @dal_bó_cooperation_2005], while studies assessing the effect of endogenous dyadic control are, to the best of my (still very limited) knowledge, relatively scarce. However, @sokolova_buskens_cooperation_2021 provide some preliminary evidence of the positive effect of endogenous dyadic control on cooperation. Furthermore, network control has been shown to affect cooperation as well, both endogenously [@frey_buskens_investments_2019], and exogenously [@buskens_raub_veer_triads_2010; @frey_buskens_investments_2019]. However, other studies have not found such effects [e.g., @corten_buskens_cooperation_2020; @miltenburg_buskens_triads_2012 for endogenous and exogenous network control, respectively]. Correspondingly, the focus will be on assessing which of these mechanisms has the largest effect on cooperation; how these mechanisms interact with each other; and on identifying the circumstances under which the effects might not be found. Ergo, other mechanisms that might affect cooperation (e.g., backward-looking learning models, altruism or other (personal) characteristics) are outside the scope of the review.
+
+# Literature
+
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\noindent
+
+<div id="refs"></div>
+
+
+
+
