@@ -1,0 +1,137 @@
+---
+title: |
+  | Initial plan 
+  | 
+  | 
+  |
+  |
+  |
+  | **Post-meeting report 16-02**
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+author: |
+  | Thom Volker (5868777)
+  |
+  |
+  | Supervisor: Vincent Buskens
+  | Co-supervisor: Werner Raub
+  |
+  |
+  | *Sociology and Social Research Master's programme*
+  |
+  | *Utrecht University*
+  |
+  |
+  |
+  | `r format(Sys.time(), '%B %d, %Y')`
+  |
+  |
+  | `r paste0("Word count: ", wordcountaddin::word_count())`
+  |
+  |
+  |
+  | 
+output: 
+  bookdown::pdf_document2:
+    number_sections: true
+    df_print: kable
+    highlight: pygments
+    toc: true
+mainfont: Calibri
+sansfont: Calibri
+linestretch: 1.25
+fontsize: 10pt
+params: 
+  !r Sys.setlocale("LC_TIME", "C")
+date: 
+indent: true
+tables: true
+header-includes:
+  - \usepackage{caption}
+  - \usepackage{wrapfig}
+  - \usepackage{booktabs,floatrow}
+bibliography: "../../thesis_literature.bib"
+csl: "../../apa-6th-edition.csl"
+link-citations: yes
+linkcolor: blue
+---
+
+# Requirements / meeting summary
+
+To translate the ideas into a realistic and reasonable project given the time available:
+
+- Different studies with different designs (not necessarily new data, except when there is an exceptional possibility to gather new data relatively easily while contributing significantly to the research).
+- An interesting research question that is both answerable given the method and the time frame, as well as interesting substantively.
+- In terms of complexity, the study should be located between the initial study (Kuiper, Buskens, Raub & Hoijtink) and the extended study (Lion et al.).
+
+Given these requirements, the focus could be on control effects on the behavior of the trustee within network embeddedness. Namely, control effects within network embeddedness do not show up consistently (in contrast to for example learning effects and control effects in dyadic embeddedness). However, when we incorporate repeated prisoner's dilemma studies, it seems natural to incorporate dyadic control as well.
+
+Studies that focus on control effects within network embeddedness are, among others, the studies by Anna, Rense, Joris, Vincent & Davide and Dal Bó & Fréchette (Dal Bó and Fréchette mainly focus on dyadic embeddedness). These studies seem to be varying enough within the bounds of feasibility on the one side, and substantially informative on the other side. Additionally, data from the *testosterone experiment* can be considered, as well as data that Rense collected in Stanford. In repeated prisoner's dilemmas, it seems natural to focus on the first round, as no learning effects have to be considered (as no learning could have taken place before the first round). 
+
+Note that differences between studies can be that in some, embeddedness is endogenous in terms of existing ties between participants (network data) or exogenous (induced by the experiment).
+
+# Studies
+
+## Utrecht group
+
+Sokolova, Buskens and Raub (forthcoming; cooperation through investments) study the effects of endogenously chosen repeated interactions versus one-shot games on cooperation (as well as contractual agreements), and find that engaging in repeated interactions indeed increases the likelihood of cooperation. Important to note here is that investing alters the pay-off matrix of the game, and that engaging in repeated games is chosen endogenously (which might complicate one-on-one comparison with one-shot games). However, overall it seems that future sanction possibilities (dyadic control; network control is not incorporated) result in higher cooperation rates.
+
+Buskens, Raub and Van der Veer (2010; trust in triads) find that in finitely repeated trust games, there are clear effects of dyadic control (and of dyadic learning and network learning) on trustfulness, but no network control effects. Note that the effects of the trustor's own trust that is abused or the other trustor's trust that is abused hardly differ. Also, there are both dyadic and network control effects on the trustworthiness of the trustee, showing that there is an effect of network control over and beyond the effect of dyadic control. Note that embeddedness in this study is exogenous.
+
+Van Miltenburg, Buskens & Raub (2012) extend on this study, and assess whether the effect of network control on trustor behavior becomes apparent as subjects gain experience. They find a significant network control effect on trustfulness, but after controlling for learning, it appeared that the higher trustfulness in later rounds is due to more trustworthiness of trustees in earlier rounds, rather than due to a network control effect. However, I do wonder how there is controlled for learning, as the plot quite convincingly shows a network control effect in game six and the proportions of honoured trust are about equal in both conditions until round 13. Possibly, the learning coefficient absorbed part of the effect of being in the full information condition. Also, the network control effect on trustworthiness is not convincingly reconfirmed in this study, but the plot show a network control effect (in game size) on trustworthiness in round 14 and 15 (but the number of trustees that still have a choice in these final rounds is relatively small).
+
+Buskens, Raub, Van Miltenburg, Montoya and Honk (2016) assess how testosterone administration influences behavior in one-shot trust games and finitely repeated trust games. The results show that investments were higher in the repeated game than in the one-shot game (which speaks in favor of dyadic control effects). The results with regard to testosterone administration are not of particular interest for the current study, but the data might prove useful for our analyses.
+
+Corten, Rosenkranz, Buskens & Cook (2016) assess how cooperation develops when subjects are embedded in a social network and receive information about their partner's interactions, relative to a situation in which no such information is provided. However, one might argue that in the atomized condition, there still are dyadic control opportunities in some sense, as the probability to meet again with a certain subject are relatively high (0.4). In the embedded condition there are more control (and learning) opportunities, but these opportunities are thus not absent in the atomized condition. However, no higher cooperation rates in the embedded condition is found relative to the atomized condition, also not when the focus is exclusive on the first round. Note that in this study, embeddedness is exogenous. 
+
+Corten, Buskens & Rosenkranz (2020) extend on the previous study by allowing for exit opportunities in combination with the opportunity to receive information. They find that cooperation rates are lower in the partner choice treatment than in all other treatments (baseline, reputation, reputation-partner choice). However, there are some discrepancies when looking at the different locations. In Berkeley, the reputation treatment seems to show the highest cooperation rates, while in Stanford, the baseline treatment shows the highest cooperation rate (although closely followed by the reputation treatment), but these differences were not significant. Nevertheless, although this is not of interest in the study at hand, we again see a clear end-game effect, indicating that control possibilities come to an end. It might be worthwhile to assess whether the end-game effects start later and are less strong in the condition with information on partner's behavior. In this study, in the partner choice and the reputation-partner choice condition, embeddedness is endogenous. 
+
+## Dal Bó and Fréchette 
+
+Then, Dal Bó (2005) shows the importance of experience with prisoner's dilemma games, and assess whether the "shadow of the future" in infinitely repeated games indeed has a positive effect on cooperation relative to finitely repeated games of the same expected length. The results show that cooperation decreases with experience in one-shot games and finitely repeated games. Also, he shows that in the first round of finitely repeated games with continuation probabilities 0.5 and 0.75, there is significantly more cooperation than in one-shot games. Also, he shows that there is significantly more cooperation in the first round of infinitely repeated games relative to finitely repeated games of the same expected length. These results clearly support the effect of dyadic control. Furthermore, Dal Bó (2005) shows that cooperation is lower when it cannot be supported in equilibrium.
+
+Dal Bó and Fréchette (2011) extend on the research by Dal Bó (2005) by further assessing how cooperation evolves as subjects gain experience. The study shows the importance of gaining sufficient experience in order to coordinate to efficient outcomes. The study shows that, after subjects have gained experience, the coorperation rates in the first round increase with the probability of continuation, showing support for dyadic control. Additionally, they show that with sufficient experience, subjects coordinate to equilibrium outcomes (defection when it is the only equilibrium outcome; cooperation when it is an equilibrium outcome as well). Cooperation raises even more when cooperation is also a risk-dominant outcome. Overall, the study shows that cooperation being an equilibrium action might be a necessary condition for cooperation, it is certainly not sufficient. The authors extend this result by addressing the importance of the "basin of attraction" of playing ALL D, and find that the larger the "basin of attraction" of ALL D (i.e., the larger the belief that AD is an optimal strategy given the incentives of the other player), the less likely a subject will cooperate. Additionally, the authors show that games within a session are not independent, as having played against cooperative partners increases the likelihood of playing cooperatively as well, and as the length of the previous game is positively related to the likelihood of cooperation. Lastly, the authors address that the strategies that describe the data best are ALL D and Tit-For-Tat (TFT).
+
+Then, Dal Bó and Fréchette (2018) provide an overview of years of research on infinitely repeated games and add to this research by analysing the meta-data over 15 studies in which subjects played at least 7 infinitely repeated games consisting of multiple rounds. First, they find that cooperation is increasing in the probability of future interactions, and that this effect increases with experience. This effect can be regarded as an effect of dyadic control on cooperation, as Dal Bó (2005) and other scholars (e.g., Engle-Warnick & Slonim, 2004; Lugovsky et al., 2017) already showed that this effect cannot be attributed to the expected length of a game by itself. 
+
+Additionally, the authors show that cooperation is more likely when cooperation is a subgame perfect equilibrium, and even more likely when cooperation is also risk-dominant and when the size of the "basin of attraction" is smaller (i.e., when cooperation is more robust to strategic uncertainty). However, the authors also show that cooperation is positively related to the realized length of previously played infinitely repeated games and by the cooperativeness of previous subjects. The authors interpret this finding as learning (learning about thesituation at hand and population that the subject deals with). Furthermore, but less relevant, the authors consider possible strategies the subjects play, and find that ALL D, Grim and TFT fit the data reasonably well. 
+
+Also, the author assess the question whether personal characteristics and motives affect cooperation. However, they find no robust evidence that risk aversion, economic training, altruism, gender, intelligence, patience, or psychological traits have a systematic effect on cooperation in infinitely repeated games in which cooperation can be supported in equilibrium. Also, they argue that the evidence is consistent with the idea that the main motivation behind cooperation is strategic.
+
+In the final paper, Dal Bó and Fréchette (2019) assess which strategies are most important in explaining subjects' behavior in infinitely repeated games. They find that ALL D, TFT and Grim are often used strategies that most subjects rely on. Additionally, they find that subjects are more likely to use strategies that can support some cooperation when cooperation becomes more valuable (when the continuation probability or the payoff from joint cooperation increases). 
+
+# Plans / ideas
+
+## Literature review
+
+It seems like the literature on embeddedness effects on trust/cooperation is divided alongside three dimensions. First, there is of course the distinction between dyadic embeddedness and network embeddedness. However, in the 10 papers considered, in all papers that assess network embeddedness, subjects are dyadically embedded as well (in the Trust in Triads studies explicitly, in the Stanford and Berkeley studies through the matching probability of 0.4). Then, within both forms of embeddedness, I assume that it is possible to make the distinction between endogenous and exogenous embeddedness. For network embeddedness, both endogenous and exogenous relationship formations are in these papers (e.g., the trust in triads studies and the studies from Stanford and Berkeley). However, for dyadic embeddedness, I have only seen exogenous network formations so far, although I assume that I could find research on endogenous dyadic network formations in the literature as well. Subsequently, it is possible to make the distinction between learning and control, through which embeddedness could affect behaviour, both in endogenous and exogenous network formation. It seems natural that for endogenous network formation, learning is a requirement. Then, there would be 8 conditions in which the literature on embeddedness can be located:
+
+1. Dyadic  - endogenous - learning
+2. Dyadic  - endogenous - control
+3. Dyadic  - exogenous  - learning
+4. Dyadic  - exogenous  - control
+5. Network - endogenous - learning
+6. Network - endogenous - control
+7. Network - exogenous  - learning
+8. Network - exogenous  - control
+
+I do not know whether it's feasible to address all these distinct ways in which embeddedness can affect trust/cooperation in the literature review (certainly it is not feasible in the thesis itself, to address all these issues). Possibly, I will mostly ignore learning, and focus on the conditions in which control is active in the literature review. Certainly, in the thesis itself, the idea is to focus on control only, and then especially control in the network case, but I don't know to what extent it is then suitable to ignore the dyadic case.
+
+
+For the literature review, I think that the effect of dyadic control is quite established, at least for the infinitely repeated Prisoner's Dilemma games. In Trust Games, it might be somewhat different, as trustors and trustees have rather distinct roles, so it might be a good idea to see whether I can find literature on this topic. However, for the effect of network control, the possible effect on cooperation seems less clear, although I believe that the trust in triads studies provide some evidence that there is a network effect as well. However, these studies assess the effect of network embeddedness on top of dyadic embeddedness, rather than distinct from dyadic embeddedness. Additionally, the studies by among others Rense and Vincent look at network embeddedness and find no effects, but in these studies there also is dyadic embeddedness, as subjects have quite a high probability to be matched again in future interactions. Additionally, the relatively complex set up of the game might warrant initial practice rounds by the subjects (as experience is an important factor in many of the hypothesized effects, as shown by Dal Bó and Fréchette). I will try to find articles that assess the effect of network embeddedness on cooperation/trust in the absence of dyadic embeddedness. Of course, it seems straightforward to look for studies that employ Trust Games rather than Prisoner's Dilemma games, as this allows for disentangling the effects for trustors and trustees. 
+
+
+## Possible experiment
+
+If we want to add something new to the currently available data, I find that it might be a possibility to extend the study by Dal Bó and Fréchette (2011), to see whether their results replicate in another context (the Netherlands), and under different circumstances. Namely, rather than playing infinitely repeated games with the same (fixed) subject, I though about randomly matching subjects, with both a full information condition (information about the other players' behavior in previous rounds) and a no-information condition (no information about past actions, effectively one-shot games). After every game, with a certain probability of continuation $\xi$, a subject in the full information condition is matched with another subject who can see his/her history within that infinitely repeated game, and with probability $1-\xi$, the subject starts a new supergame. 
+
+
+Eventually, this set-up could be extended to a network-like setting with four condition. (1) Condition in which there is no information about a subject, and they thus effectively play one-shot games. (2) A condition in which they play infinitely repeated games with continuation probability $\delta$ with the same subject (fixed). (3) A condition in which subjects play against random others, but with probability $\xi$ they take their history with them (with probability $1-\xi$, they start with a new track-record, and take their history with them again after the first round onwards). (4) A condition in which subjects play an infinitely repeated game with continuation probability $\delta$ with the same subject, but after the game finished, there also is a probability $\xi$ that they their reputation in this game with them to the next game.
+
+
+
