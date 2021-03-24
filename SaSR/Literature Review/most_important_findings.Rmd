@@ -1,0 +1,42 @@
+---
+title: "Literature Review Proposal"
+author: "Thom Volker"
+date: "3/4/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+Social dilemmas are at the core of everyday life. 
+
+# Most important research findings
+
+## Cooperation in infinitely repeated games
+
+- Roth and Murnighan (1978) and Murnighan and Roth (1983) were the first to study infinitely repeated games with a random termination period with all subjects knowing the continuation probability. They show that cooperation tends to increase with the probability of continuation (although the effect is not always monotonic).
+
+- Feinberg & Husted (1993) find that less discounting results in an increase in cooperative outcomes (although the effect of repetition was not large). Palfrey and Rosenthal (1994) find more cooperation when the continuation probability $\delta = 0.9$ than in one-shot games in a public good game under incomplete information regarding the cost of contribution.
+
+- A second wave of experimental papers, starting with Dal Bó (2005)  finds a fourfold increase of cooperation going from one-shot prisoner's dilemmas to infinitely repeated prisoner's dilemmas with a probability of continuation $\delta = 0.75$. The main reason for the difference in results is that the second wave allows subjects to participate in several repeated games and gain experience.
+
+- Dal Bó and Fréchette (2018) show that the continuation probability $\delta$ is positively related to cooperation in the very first round a subject plays, but the effect is only small, similar to the first wave of experimental papers. However, as subjects gain experience, the positive effect of $\delta$ on cooperation becomes larger.
+
+- Dal Bó and Fréchette (2018) also show that cooperation decreases to negligible levels if cooperation is not part of a subgame perfect equilibrium (SPE), but there remains a lot of variation in cooperation when it is part of a subgame perfect equilibrium. So, subjects do not necessarily coordinate on Pareto-efficient equilibria, consistent with Van Huyck, Battalio and Beil (1990) and Cooper et al. (1992).
+
+- Engle-Warnick and Slonim (2004) and Dal Bó find that cooperation is significantly greater in infinitely repeated trust games and prisoner's dilemmas, respectively, than in finitely repeated ones. Lugovsky et al. (2015) do not find differences in finitely and infinitely repeated public good games in terms of contributions, but do find and end-game effect in finitely repeated setting. Overall, evidence suggests that subjects with sufficient experience behave differently under finitely and infinitely repeated games, but further research is necessary.
+
+- Dal Bó & Fréchette (2011), Blonski, Ockenfels & Spagnolo (2011) and the meta-data in Dal Bó and Fréchette (2018) suggest that cooperation rates are higher when cooperation is risk-dominant, and that this difference increases with experience, but that there are considerable differences across treatments. So, the fact that cooperation is risk dominant does not per se imply that a majority of subjects cooperate. So, in infinitely repeated games, subjects may not even coordinate on equilibria that are both Pareto efficient and risk-dominant.
+
+- Based on Blonski, Ockenfels and Spagnolo (2011), Dal Bó and Fréchette (2011) and the meta-data in Dal Bó and Fréchette (2018) show that cooperation rates are increasing in how robust cooperation is to strategic uncertainty, especially when cooperation is risk-dominant. Note that especially the size of the basin of attraction of ALL D (always playing defection; the maximum probability of the other player following the grim strategy such that playing ALL D is optimal) is a particularly useful measure of the robustness of cooperation to strategic uncertainty (the believed likelihood that the other will defect).
+
+- Learning can have large effects on cooperation. Engle-Warnick and Slonim (2006b) and Dal Bó and Fréchette (2011) show that the length of previous supergames is positively related to the likelihood of cooperation. Dal Bó and Fréchette (2011) also show that a subject who was previously matched with someone who started with cooperation is more likely to cooperate as well. These observations have been repeated in multiple papers and the meta-data in Dal Bó and Fréchette (2018; e.g., Camera and Casari, 2009; Sherstyuk, Tarui and Saijo, 2013; Embrey, Fréchette and Stacchetti, 2013; Bernard, Fanning and Yuksel, 2017; Fréchette and Yuksel, 2017). However, this result does not seem to stem from the fact that subjects are not capable of interpreting $\delta$ correctly, as subjects were quite accurate when predicting this expectation (Dal Bó, 2015). This suggests that the effect of the realized length on cooperation comes either from the minority of subjects who do not know the expected length of infinitely repeated games, or from subjects updating their overall evaluation of the value of cooperation through experience. The latter interpretation is consistent with the idea that subjects have beliefs about the proportion of the population that will cooperate and update these beliefs as a function of experiences. Note that this is in line with previous observations on the role of basins of attraction. The role of experience and of basins of attraction suggest that if beliefs, at the beginning of an experience are close to the dividing line determined by the basin of attraction, the specific experiences could lead to very different long-term behavior. There is an interesting, as yet unexplored, question regarding the way that humans learn in infinitely repeated games: Is the impact of the realized length constant throughout, or is the impact more important early on? Overall, cooperation seems to be affected by the realized length of previous supergames and by the choices of past subjects with whom one was paired. 
+
+- Strategies ALL D, Grim and TFT account for most of the data, so, subjects use punishments to support cooperation, but punishments are not necessarily credible (not SPE). Rand, Fudenberg & Dreber (2015) and Aoyagi, Bhaskar & Fréchette (forthcoming) provide suggestive evidence that these three strategies may be important even in more complex games.
+
+- **Design guidelines.** (1) Payment should not be based on a round selected at random, but on the complete game. (2) Subjects should not be matched in fixed pairs (across supergames). (3) Theory indicates that a turnpike design is the most robust, although the meta-data shows no differences between random, round-robin and turnpike rematching designs. (4) When observating long interactions is important for the question at hand, using payoff discounting followed by random termination or the block-random termination makes sense.
+
+- Reubens and Seutens (2012) and Cabral, Ozbay & Schotter (2014) provide evidence that cooperation in infinitely repeated games is motivated mostly by strategic considerations implying that subjects exhibit forward-looking strategic behavior.
