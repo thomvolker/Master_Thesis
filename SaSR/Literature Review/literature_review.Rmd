@@ -1,0 +1,104 @@
+---
+title: |
+  | 
+  | 
+  | 
+  |
+  |
+  |
+  |
+  |
+  | **Literature Review**
+  |
+  |
+  |
+  |
+  | Embeddedness effects on cooperation in social dilemmas: Disentangling the ways in which control affects cooperation
+  |
+  |
+  |
+  |
+  |
+author: |
+  | Thom Volker (5868777)
+  |
+  |
+  | Supervisors: Vincent Buskens & Werner Raub
+  |
+  |
+  | *Sociology and Social Research Master's programme*
+  |
+  | *Utrecht University*
+  |
+  |
+  |
+  | `r format(Sys.time(), '%B %d, %Y')`
+  |
+  |
+  | `r paste0("Word count: ", wordcountaddin::word_count())`
+  |
+  |
+  |
+  | 
+output: 
+  bookdown::pdf_document2:
+    number_sections: true
+    df_print: kable
+    highlight: pygments
+    toc: true
+mainfont: Calibri
+sansfont: Calibri
+linestretch: 1.5
+fontsize: 11pt
+params: 
+  !r Sys.setlocale("LC_TIME", "C")
+indent: true
+tables: true
+header-includes:
+  - \usepackage{caption}
+  - \usepackage{wrapfig}
+  - \usepackage{booktabs,floatrow}
+bibliography: "../../thesis_literature.bib"
+csl: "../../apa-6th-edition.csl"
+link-citations: yes
+linkcolor: blue
+---
+
+\newpage
+
+# Key words
+
+- Dyadic + network embeddedness (focus on network embeddedness for thesis itself).
+- Use of own (readily available) data
+- Try to align the M&S project and SaSR project as much as possible.
+- Endogenous + exogenous (might not be fruitful in the thesis itself).
+- Note that the two theses are written in parallel, and have to be finished in May 2022.
+
+# Introduction
+
+Explain the effects of embeddedness
+
+- Why is cooperation often not possible in isolated encounters?
+- This can be (partly) overcome by embeddedness.
+
+- Extensively discuss control
+- Briefly discuss learning (so that we can refer to the fact that disentangling control and learning might not be always possible).
+
+# Control dyadic embeddedness
+
+## Control in exogenously dyadically embedded interactions (repeated games)
+
+- Dal Bo & Frechette
+- Buskens, Raub & Van der Veer
+
+## Control in endogenously dyadically embedded interactions (repeated games)
+
+- Sokolova, Buskens & Raub
+
+# Control network embeddedness
+
+## Control in exogenously embedded interactions in networks
+
+## Control in endogenously embedded interactions in networks
+
+
