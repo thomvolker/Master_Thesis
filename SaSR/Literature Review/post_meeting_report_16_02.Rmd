@@ -244,6 +244,16 @@ An idea could be to employ an adaptive design, in which trustee behavior in inte
 
 The experiment shows that experience affects behavior in the repeated Trust Game, and that various behavioral regularities of more experienced subjects correspond more closely to the game theoretical equilibrium model. 
 
+# Corten et al.
+
+A key finding of previous research is that cooperation is possible if interactions are repeated. However, an important assumption in the baseline scenario is that interactions occur in social isolation (i.e., actors interact with only one partner at a time, without information about what happened in other interactions). In reality, cooperative relations are often embedded in social networks through which information of interactions becomes known to third-parties. It is thought that cooperation would be more likely in dense networks, in which information on defection is easily shared.
+
+Experiments tend to show that the possibility of communication, either before or during the game, promote cooperation, as shown by Sally [28] and Balliet [29]. Communication seems particularly effective if it takes place face-to-face and in larger groups, but these studies do not consider communication and reputation building in the context of social networks, in the sense that actors receive information via third parties.
+
+Possible explanations - earlier research showed that defection against any other person of the interaction partner is as strong a predictor of current defection of the subject as defection against oneself. Therefore, the information about earlier defection may induce the fear of being exploited, leading to less cooperation.
+
+Additionally, it might be that the probability of meeting again in any of the future rounds is high enough ($\pi = 0.4$) to ensure dyadic control. Then, it might be that network control comes into play only when the opportunities to have individual control are relatively small. So, network control works in the absence of individual control opportunities, rather than as an additive effect.
+
 
 # Ideas
 
@@ -251,7 +261,11 @@ The experiment shows that experience affects behavior in the repeated Trust Game
 
 2. Sokolova - Just a question - if the payoff of mutual cooperation would be lower, say $(40, 40)$ and the other payoffs remain $\{(0,100); (100, 0); (20, 20)\}$, does it happen that actors coordinate in such a way that they would alternately cooperate and defect, such that they alternately get payoff $100$, pay-off $0$. I can imagine that with a continuation probability of .75 you will not observe this behavior, but maybe if the continuation probability equals .90 or so? 
 
-3. Trust in triads - future research - we would expect the effects of network control on trustor behavior to be more easily found when trustors play repeated Trust Games with information exchange between trustors more often, specifically when they are also in the role of the trustee in some of those repeated games (see Bednar and Page, 2007; Bednar et al., 2008). 
+3. Trust in triads - future research - we would expect the effects of network control on trustor behavior to be more easily found when trustors play repeated Trust Games with information exchange between trustors more often, specifically when they are also in the role of the trustee in some of those repeated games (see Bednar and Page, 2007; Bednar et al., 2008).
+
+4. Include sanctioning opportunities - actors have the opportunity to report someone's behavior, so that there remains a network of cooperative subjects, or actors may choose with whom to cooperate, rather than being assigned randomly.
+
+5. Some studies showed that subjects are often quite afraid to be taken advantage of (as shown by the finitely repeated trust games by Vincent and others). Therefore, my idea is that it might be the case that some accidental defection might result in lower cooperation rates, for example in the studies by Rense, Stephanie and Vincent. So, we could maybe implement an experiment in which the history of only a certain number of rounds is visible (say the last 3/5). This should still be long enough to provide enough information for others to decide whether or not they are willing to cooperate, but some initial mistake might then not lead to such a large decrease in trust.
 
 # Question
 
