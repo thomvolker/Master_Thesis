@@ -115,6 +115,14 @@ See title.
 
 - [x] Van Miltenburg, N., Buskens, V., Raub, W. (2012). Trust in triads: Experience effects. Social Networks, 34, 425-428.
 
+### Studies find that certain institutions mitigate social dilemmas especially strongly if they were chosen endogenously
+
+- [ ] Gürerk, Ö., Irlenbush, B., & Rockenbach, B. (2014). On cooperation in open communities. Journal of Public Economics, 120, 220-230.
+
+- [ ] Sutter, M., Haighner, S., & Kocher, M. G. (2010). Choosing the carrot or the stick? Endogenous institutional choice in social dilemma situations. Review of Economic Studies, 77, 1540-1566.
+
+- [ ] Schneider, F., & Weber, R. A. (2013). Long-term commitment and cooperation. Working Paper 130. Department of Economics, University of Zürich. Show that a longer interaction duration (dyadic embeddedness) promotes cooperation more if it is chosen endogenously by the actors rather than imposed exogenously.
+
 ## Control - endogenous
 
 ## Control - exogenous
