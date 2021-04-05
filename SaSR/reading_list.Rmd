@@ -37,7 +37,7 @@ Overview of cooperation in networks.
 
 Cooperation due to dynamic partner updating?
 
-- [ ] Kollock, P. (1998). Social dilemmas: The anatomy of cooperation. Annual Review of Sociology, 24, 183-214.
+- [x] Kollock, P. (1998). Social dilemmas: The anatomy of cooperation. Annual Review of Sociology, 24, 183-214.
 
 Annual review on cooperation.
 
@@ -76,6 +76,11 @@ See title.
 - [ ] Spillman, L., & Strand, M. (2013). Interest-oriented action. Annual Review of Sociology, 39, 85-104.
 
 See title.
+
+** Axelrod on evolution of cooperation.
+- [ ] Axelrod R, D’Ambrosio L. 1994. Annotated bibliography of the evolution of cooperation. Online document: http://ippsweb.ipps.lsa.umich.edu:70/1/ipps/papers/coop 
+
+- [x] Axelrod R, Dion D. 1988. The further evolution of cooperation. Science 242:1385–90
 
 # Dyadic embeddedness
 
