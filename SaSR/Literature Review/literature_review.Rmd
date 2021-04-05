@@ -55,9 +55,9 @@ params:
 indent: true
 tables: true
 header-includes:
-  - \usepackage{caption}
+  - \usepackage{caption,multirow,array,float}
   - \usepackage{wrapfig}
-  - \usepackage{booktabs,floatrow}
+  - \usepackage{booktabs}
 bibliography: "../../thesis_literature.bib"
 csl: "../../apa-6th-edition.csl"
 link-citations: yes
@@ -65,6 +65,7 @@ linkcolor: blue
 ---
 
 \newpage
+\restylefloat{table}
 
 # Key words
 
@@ -76,6 +77,28 @@ linkcolor: blue
 
 # Introduction
 
+Social dilemmas are at the core of everyday life. Students may anticipate a good grade with minimal effort by free-riding on the work of others in their group, researchers could obtain yet another publication by letting their collaborators do the lion's share of the required work [@corten_buskens_cooperation_2020] and a car dealer may hide several vehicle defects when selling a second-hand car to a relatively uninformed customer [@buskens_weesie_experiment_2000]. The benefits of acting opportunistically are amplified in isolated encounters, that is, in one-shot interactions where the actors involved do not have any mutual connections, nor do they have a shared history or a shared future. Because no information about a transaction partner's behaviour can be obtained or transmitted, actors' sole concern is their individual return in a given interaction. However, most interactions do not occur in social isolation, but are characterized by possibilities of future interactions, while the actors involved may share a common network. Thus, these interactions are said to be embedded, dyadically, in a network, or both. 
+
+# Embeddedness
+
+It is well-established that in isolated encounters, it is generally hard to establish a cooperative relationship [e.g., name multiple sources, Hardin (tragedy of the commons, )]. Consider for example the one-shot Prisoner's dilemma with pay-offs as depicted below (Table 1). According to the pay-off scheme, regardless of the choice of the other player, an individual actor obtains the highest pay-off by acting opportunistically (i.e., choosing $D$). Defecting when the other cooperates leads to an increase in pay-offs, as well as defecting when the other defects as well. Hence, the Nash equilibrium is mutual defection, even though both players would be better off with mutual cooperation. Indeed, although there is some cooperation in reality, multiple experiments have shown that the amount of cooperative behavior in such settings is minimal, especially after players have gained experience with one-shot games [e.g., @cooper_et_al_cooperation_1996; @dal_bó_cooperation_2005]. **CHECK FOR SOME COOPERATION IN ONE-SHOT PD'S THE ARTICLES Hayashi N, Ostrom E, Walker J, Yamagishi T.1997.Reciprocity, trust and the illusion ofcontrol: a cross-societal study.Work.Pap.Indiana Univ. Orbell J, Dawes R. 1993. Social welfare, coop-erators’ advantage, and the option of notplaying the game.Am. Sociol. Rev.58(6):787–800** Discouraged, one might conclude that no cooperation is possible, because human beings would exploit one another whenever the opportunity arises. However, cooperative behaviour is not as seldom as this finding would make us believe, as illustrated by various examples ranging from the number of packages that are shipped and paid for each day to research projects that really are a joint effort of multiple scientists. The paramount question then is which conditions make that cooperative behaviour will not be abused.
+
+\begin{table}
+  \centering
+  \setlength{\extrarowheight}{2pt}
+    \begin{tabular}{cc|c|c|}
+      & \multicolumn{1}{c}{} & \multicolumn{2}{c}{$P_1$} \\
+      &  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$C$} & \multicolumn{1}{c}{$D$} \\
+        \cline{3-4} \multirow{2}*{$P_2$} & $C$ & $(5,5)$ & $(0,10)$ \\
+        \cline{3-4} & $D$ & $(10,0)$ & $(2,2)$ \\
+        \cline{3-4}
+    \end{tabular}
+\end{table}
+
+Critics of this initial theoretical model have rightly noted that most real-life interactions do not take place in social isolation, but are actually embedded. Embeddedness refers to the fact that interactions often occur within a social environment. The actors involved may have interacted in the past, or they may speculate on having future interactions. Additionally, the actors may be connected indirectly, through common acquaintances that have interacted with any of the two in the past, or speculate on doing so in the future.
+
+Ostrom (1997) remarks that providing sanction opportunities against those that abuse trust can increase trust and cooperation.
+
 Explain the effects of embeddedness
 
 - Why is cooperation often not possible in isolated encounters?
@@ -84,7 +107,9 @@ Explain the effects of embeddedness
 - Extensively discuss control
 - Briefly discuss learning (so that we can refer to the fact that disentangling control and learning might not be always possible).
 
-# Control dyadic embeddedness
+# Control effects in dyadic relations
+
+A first indication on the presence of control effects in repeated interactions can be seen in finite interactions. According to equilibrium behaviour, it follows from backward induction that no cooperation is possible in finitely repeated games [e.g., @luce_raiffa_games_1989]. Namely, in the last round, non-cooperative behaviour cannot be punished in any subsequent round, and hence, players profit from defective behaviour. Subsequently, actions in the last but one round do not affect behaviour in the final round, and thus defecting is the pay-off maximizing strategy. This pattern repeats itself to the first round of the game, and thus one would expect no cooperation at all. However, a variety of experiments show that subjects act cooperatively in initial rounds of a finitely repeated game, leading Rapoport (1997, 122 ADD BIBTEX REFERENCE) to conclude that in practice, subjects do not rely on, or are not capable of backward induction. However, in the final rounds of the finitely repeated games, where actors can not or hardly punish any defective behaviour of other players, cooperation rates decrease substantially. 
 
 ## Control in exogenously dyadically embedded interactions (repeated games)
 
@@ -102,3 +127,10 @@ Explain the effects of embeddedness
 ## Control in endogenously embedded interactions in networks
 
 
+# Literature
+
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\noindent
+
+<div id="refs"></div>
