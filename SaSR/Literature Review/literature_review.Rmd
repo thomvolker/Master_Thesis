@@ -13,7 +13,7 @@ title: |
   |
   |
   |
-  | Embeddedness effects on cooperation in social dilemmas: Disentangling the ways in which control affects cooperation
+  | Control effects on cooperation in embedded interactions
   |
   |
   |
@@ -32,14 +32,18 @@ author: |
   |
   |
   |
+  |
+  |
+  |
+  |
+  |
   | `r format(Sys.time(), '%B %d, %Y')`
   |
   |
   | `r paste0("Word count: ", wordcountaddin::word_count())`
-  |
-  |
-  |
   | 
+  |
+  |
 output: 
   bookdown::pdf_document2:
     number_sections: true
@@ -64,10 +68,12 @@ link-citations: yes
 linkcolor: blue
 ---
 
+
 \newpage
-\restylefloat{table}
 
 # Key words
+
+Key words:
 
 - Dyadic + network embeddedness (focus on network embeddedness for thesis itself).
 - Use of own (readily available) data
@@ -81,7 +87,7 @@ Social dilemmas are at the core of everyday life. Students may anticipate a good
 
 # Embeddedness
 
-It is well-established that in isolated encounters, it is generally hard to establish a cooperative relationship [e.g., name multiple sources, Hardin (tragedy of the commons, )]. Consider for example the one-shot Prisoner's dilemma with pay-offs as depicted below (Table 1). According to the pay-off scheme, regardless of the choice of the other player, an individual actor obtains the highest pay-off by acting opportunistically (i.e., choosing $D$). Defecting when the other cooperates leads to an increase in pay-offs, as well as defecting when the other defects as well. Hence, the Nash equilibrium is mutual defection, even though both players would be better off with mutual cooperation. Indeed, although there is some cooperation in reality, multiple experiments have shown that the amount of cooperative behavior in such settings is minimal, especially after players have gained experience with one-shot games [e.g., @cooper_et_al_cooperation_1996; @dal_bó_cooperation_2005]. **CHECK FOR SOME COOPERATION IN ONE-SHOT PD'S THE ARTICLES Hayashi N, Ostrom E, Walker J, Yamagishi T.1997.Reciprocity, trust and the illusion ofcontrol: a cross-societal study.Work.Pap.Indiana Univ. Orbell J, Dawes R. 1993. Social welfare, coop-erators’ advantage, and the option of notplaying the game.Am. Sociol. Rev.58(6):787–800** Discouraged, one might conclude that no cooperation is possible, because human beings would exploit one another whenever the opportunity arises. However, cooperative behaviour is not as seldom as this finding would make us believe, as illustrated by various examples ranging from the number of packages that are shipped and paid for each day to research projects that really are a joint effort of multiple scientists. The paramount question then is which conditions make that cooperative behaviour will not be abused.
+Theoretically, it is well established that in isolated social dilemmas, it is generally hard to establish a cooperative relationship [see @hardin_tragedy_1968 for the *Tragedy of the Commons*; @luce_raiffa_games_1989 for the Prisoner's Dilemma; and @buskens_raub_embedded_2002 for the Trust Game]. Consider for example the one-shot Prisoner's dilemma as depicted below (Table 1). According to the pay-off scheme, regardless of the choice of the other player, an individual actor obtains the highest pay-off by acting opportunistically (i.e., choosing $D$). Defecting when the other cooperates leads to an increase in pay-offs, as well as defecting when the other defects as well. Hence, the Nash equilibrium is mutual defection, even though both players would be better off with mutual cooperation. Indeed, although there is some cooperation in reality, multiple experiments have shown that the amount of cooperative behavior in such settings is minimal, especially after players have gained experience with one-shot games [e.g., @cooper_et_al_cooperation_1996; @dal_bó_cooperation_2005]. **CHECK FOR SOME COOPERATION IN ONE-SHOT PD'S THE ARTICLES Hayashi N, Ostrom E, Walker J, Yamagishi T.1997.Reciprocity, trust and the illusion ofcontrol: a cross-societal study.Work.Pap.Indiana Univ. Orbell J, Dawes R. 1993. Social welfare, coop-erators’ advantage, and the option of notplaying the game.Am. Sociol. Rev.58(6):787–800** Discouraged, one might conclude that no cooperation is possible, because human beings would exploit one another whenever the opportunity arises. However, cooperative behaviour is not as seldom as this finding would make us believe, as illustrated by various examples ranging from the number of packages that are shipped and paid for each day to research projects that really are a joint effort of multiple scientists. The paramount question then is which conditions make that cooperative behaviour will not be abused.
 
 \begin{table}
   \centering
@@ -97,34 +103,49 @@ It is well-established that in isolated encounters, it is generally hard to esta
 
 Critics of this initial theoretical model have rightly noted that most real-life interactions do not take place in social isolation, but are actually embedded. Embeddedness refers to the fact that interactions often occur within a social environment. The actors involved may have interacted in the past, or they may speculate on having future interactions. Additionally, the actors may be connected indirectly, through common acquaintances that have interacted with any of the two in the past, or speculate on doing so in the future.
 
-Ostrom (1997) remarks that providing sanction opportunities against those that abuse trust can increase trust and cooperation.
+- Add that embeddedness can foster cooperation through two mechanisms: learning and control. 
+- Briefly explain learning.
+- More elaborately explain control, and remark that this review focuses on control. However, as quite some literature is not able to distinguish learning and control, it is helpful to explain learning as well, so that it is possible to refer back to this section when control and learning cannot be disentangled.
+- Explain that control effects can be investigated in experiments looking at the first round of a series of games (no learning yet), by an end-game effect, or by controlling for learning effects. The latter is generally hard, as it is not known how learning and control effects may affect one another.
 
-Explain the effects of embeddedness
+<!--Ostrom (1997) remarks that providing sanction opportunities against those that abuse trust can increase trust and cooperation. 
 
-- Why is cooperation often not possible in isolated encounters?
-- This can be (partly) overcome by embeddedness.
-
-- Extensively discuss control
-- Briefly discuss learning (so that we can refer to the fact that disentangling control and learning might not be always possible).
+Sánchez (2018) remarks that the mechanism underlying the stability of cooperation in dynamic networks may be rather general, namely, the opportunity to punish misbehaving actors: "When my neighbor defects and benefits from my cooperative action, I punish her by cutting the corresponding link and abstaining from interacting." This allows cooperators to unite themselves and leaving out the actors that abused trust.-->
 
 # Control effects in dyadic relations
 
-A first indication on the presence of control effects in repeated interactions can be seen in finite interactions. According to equilibrium behaviour, it follows from backward induction that no cooperation is possible in finitely repeated games [e.g., @luce_raiffa_games_1989]. Namely, in the last round, non-cooperative behaviour cannot be punished in any subsequent round, and hence, players profit from defective behaviour. Subsequently, actions in the last but one round do not affect behaviour in the final round, and thus defecting is the pay-off maximizing strategy. This pattern repeats itself to the first round of the game, and thus one would expect no cooperation at all. However, a variety of experiments show that subjects act cooperatively in initial rounds of a finitely repeated game, leading Rapoport (1997, 122 ADD BIBTEX REFERENCE) to conclude that in practice, subjects do not rely on, or are not capable of backward induction. However, in the final rounds of the finitely repeated games, where actors can not or hardly punish any defective behaviour of other players, cooperation rates decrease substantially. 
+A first indication on the presence of control effects in repeated interactions can be seen in finite interactions. According to equilibrium behaviour, it follows from backward induction that no cooperation is possible in finitely repeated games [e.g., @luce_raiffa_games_1989]. Namely, in the last round, non-cooperative behaviour cannot be punished in any subsequent round, and hence, players profit from defective behaviour. Subsequently, actions in the last but one round do not affect behaviour in the final round, and thus defecting is the pay-off maximizing strategy. This pattern repeats itself to the first round of the game, and thus one would expect no cooperation at all. However, a variety of experiments show that subjects act cooperatively in initial rounds of a finitely repeated game, leading Rapoport [-@rapoport_order_1997, 122] to conclude that in practice, subjects do not rely on, or are not capable of backward induction. However, in the final rounds of the finitely repeated games, where actors can not or hardly punish any defective behaviour of other players, cooperation rates decrease substantially. 
 
 ## Control in exogenously dyadically embedded interactions (repeated games)
 
 - Dal Bo & Frechette
-- Buskens, Raub & Van der Veer
+- Buskens, Raub & Van der Veer - the condition without reputation shows a clear end-game effect, indicate for the presence of control effects.
 
 ## Control in endogenously dyadically embedded interactions (repeated games)
 
-- Sokolova, Buskens & Raub
+- Sokolova, Buskens & Raub - show higher cooperation rates in dyadically embedded interactions than in one-shot games.
 
-# Control network embeddedness
+# Control effects of network embeddedness
+
+Research on repeated interactions in dyadic relations involve two actors forced into an iterated relation. However, in reality, interaction partners may deliberately choose to engage in a relationship and have the freedom to terminate the relationship [@yamagishi_prisoners_1994]. 
+
+@sanchez_physics_2018 remarks in a review that lattices or networks do not support cooperation at all. Even though cooperation in networks generally starts at a high level, with the majority of the actors choosing to cooperate, cooperation rates generally decrease to a fraction of only 20%.
 
 ## Control in exogenously embedded interactions in networks
 
 ## Control in endogenously embedded interactions in networks
+
+# Control effects in iterated interactions embedded in networks
+
+Dyadic and network embeddedness simultaneously.
+
+# Conclusion
+
+<!--
+In these studies, causality is generally not an issue. The majority of the reviewed literature makes use of the experimental method, that allows the researcher to attribute changes in the outcome to the varying conditions. In this way, experimental research overcomes some of the difficulties of non-experimental field data that is typically difficult to replicate and does seldom allow for causal inference [fehr_gintis_2007; ADD BIBTEX]. The primary problem of this line of research lies in the external validity of the results. The fact that theories prove their usefulness in a laboratory does not necessarily say much about these mechanisms in the real world. 
+
+Additionally, most experimental work has a hard time identifying the mechanism through which cooperation occurs. There is (???) evidence for the effect of control, but these effects are often hard to tell apart from direct sanctioning or learning models. 
+-->
 
 
 # Literature
