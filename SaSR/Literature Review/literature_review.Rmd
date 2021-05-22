@@ -66,24 +66,25 @@ header-includes:
   - \captionsetup[table]{textfont=it,format=plain,justification=justified,
                          singlelinecheck=false,labelsep=spaced,skip=0pt}
   - \definecolor{ocean}{HTML}{005e73}
+  - \definecolor{navy}{HTML}{002a79}
 bibliography: "../../thesis_literature.bib"
 csl: "../../apa-6th-edition.csl"
 link-citations: yes
-linkcolor: ocean
+linkcolor: navy
 ---
 
 \newpage
 
 
-<!-- # Key words -->
+# Key words
 
-<!-- Key words: -->
+Key words:
 
-<!-- - Dyadic + network embeddedness (focus on network embeddedness for thesis itself). -->
-<!-- - Use of own (readily available) data -->
-<!-- - Try to align the M&S project and SaSR project as much as possible. -->
-<!-- - Endogenous + exogenous (might not be fruitful in the thesis itself). -->
-<!-- - Note that the two theses are written in parallel, and have to be finished in May 2022. -->
+- Dyadic + network embeddedness (focus on network embeddedness for thesis itself).
+- Use of own (readily available) data
+- Try to align the M&S project and SaSR project as much as possible.
+- Endogenous + exogenous (might not be fruitful in the thesis itself).
+- Note that the two theses are written in parallel, and have to be finished in May 2022.
 
 # Introduction
 
@@ -145,9 +146,11 @@ Although the evidence consistently shows that first round cooperation increases 
 
 ## Control in endogenously dyadically embedded interactions (repeated games)
 
-The previous section shows that in exogenously embedded dyadic interactions there is a relatively consistent effect of control on cooperation. However, a substantial proportion of real-life interactions, dyadic embeddedness is not imposed exogenously, but rather established intentionally by the actors involved. Dyadic embeddedness also fosters first-round cooperation when it is chosen by the actors involved in an interaction, without having prior information with respect to the subsequent transaction partner [@sokolova_buskens_cooperation_2021; @schneider_weber_cooperation_2013; @brown_etal_relational_2004; KOLLOCK as well]. In fact, even at the cost of a portion of subjects' payoffs, they are willing to establish a long-term relationship, and are subsequently more likely to behave cooperatively in this relationship compared to behavior in one-shot games [@sokolova_buskens_cooperation_2021]. 
+The previous section shows that in exogenously embedded dyadic interactions there is a relatively consistent effect of control on cooperation. However, a substantial proportion of real-life interactions, dyadic embeddedness is not imposed exogenously, but rather established intentionally by the actors involved [@kollock_emergence_1994]. Dyadic embeddedness also fosters first-round cooperation when it is chosen by the actors involved in an interaction, without having prior information with respect to the subsequent transaction partner [@sokolova_buskens_cooperation_2021; @schneider_weber_cooperation_2013; @brown_etal_relational_2004]. These findings are in line with the idea that actors realize that having a good reputation may facilitate future lucrative interactions [@kollock_emergence_1994], and that such a reputation can be build by behaving cooperatively. In fact, even at the cost of a portion of subjects' payoffs, they are willing to establish a long-term relationship, and are subsequently more likely to behave cooperatively in this relationship compared to behaviour in one-shot games [@sokolova_buskens_cooperation_2021]. 
 
 When dyadic embeddedness is established endogenously, however, not necessarily the effect of control induces more cooperation, as there might also be a selection effect at work. Then, people who are more willing to cooperate are more likely to engage in repeated interactions, and hence cooperation in repeated interactions is higher. @schneider_weber_cooperation_2013 show that people who *a priori* indicate a higher willingness to cooperate were indeed more likely to engage in repeated interactions, although this characteristic only explained part of the increase in first round cooperation rates relative to one-shot games. Again, it was shown, however, that a longer, endogenously chosen, duration yields more first round cooperation, similarly to the findings under exogenous dyadic embeddedness [@schneider_weber_cooperation_2013], which is indicative for a control effect. Additionally, @brown_etal_relational_2004 find that, already in the first round, actors are more trustful and trustworthy when the possibility of endogenously chosen repeated interactions exist, relative to when continuing an interaction is not possible, regardless of whether an interaction is indeed continued. Note that in this experiment, actors are randomly assigned to a treatment where endogenously chosen repeated interactions are possible or a treatment when such interactions are not possible. Hence, the prospect of a mutually cooperative interaction already induces more cooperation. Although systematic testing of the effect of control on cooperation in endogenous dyadic embedded interactions is, to the best of my knowledge, fairly limited, the available evidence suggests that it likely is at least as strong as in exogenously dyadic embedded interactions.
+
+[Potentially add a section containing the studies by Hauk & Nagel (2001), Hauk (2003) and Zhang, Fan, Li, Zheng, Bao, Cressman, & Tao (2016), who additionally consider opting out of a repeated interaction. For now I focused on network embeddedness first, but given that there are still three weeks left, I might add this.
 
 
 # Control effects of network embeddedness
@@ -159,6 +162,8 @@ Research on repeated interactions under dyadic embeddedness involves two actors 
 @sanchez_physics_2018 remarks in a review that lattices or networks do not support cooperation at all. Even though cooperation in networks generally starts at a high level, with the majority of the actors choosing to cooperate, cooperation rates generally decrease to a fraction of only 20%.
 
 CHECK REFERENCES IN ARTICLE FREY, BUSKENS & CORTEN
+
+Possible reason for the breakdown of trust: initial behaviour has an important influence on the emergence of cooperation. @kollock_emergence_1994 remarks that "... the market 'failed' in that after a short length of time only low-quality goods were being sold at low prices (and so resulting in low profits for everyone). ... in the group where the first few moves were exploitative (trying to get a high price for low-quality goods), low_quality goods were soon the only ones available in the group."
 
 ## Control in exogenously embedded interactions in networks
 
@@ -175,6 +180,8 @@ Why does dyadic embeddedness foster cooperation more than network embeddedness. 
 @kollock_emergence_1994 on experiments: "[T]he typical social exchange experiment guarantees the terms of exchange. In one sense this is an understandable feature of an experimental paradigm if one wishes to study, for example, the dynamics of power in a controlled way, but in another sense it sidesteps much that is crucial in actual interaction (concerns of uncertainty, risk, and being taken advantage of) and thus much that may be central in explaining why social structure in the form of networks of commitment exists.
 
 Most studies in this field of research are narrowed down to assess how small changes in conditions affect cooperation, providing insight in multiple potentially important mechanisms that affect cooperation. This has led to a wide variety of factors that in one way or another affect cooperation when studied in isolation. A numerous amount of studies focused on cooperation in dyadically embedded relations, formed either exogenously or endogenously, to investigate what aspects of an interaction may foster and complicate cooperation. Additionally, there are numerous studies that assess how network embeddedness fosters cooperation, most of them focusing on a relatively small aspect of the network. However, these studies suffer from two important limitations. First, most experiments rely on an artificial and often greatly simplified social context, regardless of whether the focus of the studies is dyadic or network embeddedness. Hence, the extent to which findings from these experiments can be translated to everyday life is often questionable. Second, focusing on relatively small changes between conditions may complicate an assessment of the bigger picture. Predominantly, factors that seem important for cooperation when studied in isolation, may appear trivial when multiple factors are assessed simultaneously. 
+
+The majority of experimental studies on dyadic embeddedness do not allow for leaving a defective relationship, with @brown_etal_relational_2004 as one of the rare exceptions. See also Hauk (2003; https://link.springer.com/content/pdf/10.1023/A:1027385819400.pdf) Yet, this feature is often covered in studies on network embeddedness. See e.g. Buskens 2003 for a theoretical outline of the effect of leaving opportunities.
 
 <!--However, the question is whether it is actually control that fosters cooperation in repeated interactions. Namely, the prospect of future benefits that by far outweigh the gains of short-term opportunistic behaviour can possibly be realized without any control. Consider a game in which after the end of every round, the subjects involved unilaterally decide to break of the interaction. That is, the subjects play a one-shot game, and after the game, they can decide whether they want to play the same game with each other. There is no control in a strict sense, because future interactions depend on choices made after the game. However,-->
 
