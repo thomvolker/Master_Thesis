@@ -48,15 +48,15 @@ Annual review on cooperation.
 
 - [x] Axelrod R, Dion D. 1988. The further evolution of cooperation. Science 242:1385–90
 
-- [ ] Sonnemans, J., Schram, A., & Offerman, T. (1999). Strategic behavior in public good games: when partnersdrift apart.Economics Letters,62(1), 35–41
+- [ ] Sonnemans, J., Schram, A., & Offerman, T. (1999). Strategic behavior in public good games: when partnersdrift apart. Economics Letters,62(1), 35–41
 
 Participants play for 36 rounds in groups of four. Group composition remains constant for a minimum of three and a maximum of 12 rounds. Group composition remains constant for a minimum of three and a maximum of 12 rounds. Groups change only gradually, with at most one subject at a time leaving the group with replacement, and the timing of departure is common knowledge. This design feature is crucial because a subject leaving a group is guaranteed not to interact with his former group members again and so there is no incentive to engage in strategic behavior in the last period before leaving the group, while strategic behavior is still possible in other periods. The authors find evidence of strategic behavior in that there is a sharp decline in contributions in the last period prior to leaving a group, but they also find evidence of conditional behavior in that subjects who expect others to contribute also contributed themselves.
 
-- [ ] Andreoni, J. & Miller, J. H. Rational cooperation in the finitely repeatedprisoner’s dilemma: experimental evidence.Econ. J.103,570–585 (1993).
+- [x] Andreoni, J. & Miller, J. H. Rational cooperation in the finitely repeatedprisoner’s dilemma: experimental evidence.Econ. J.103,570–585 (1993).
 
 Quote from Andrew Mao, Lili Dworkin, Siddharth Suri& Duncan J. Watts: "If sufficiently many players in finitely repeated games are conditional cooperators, either because they harbour altruistic (i.e., other regarding) preferences or for some other reason (e.g., internalized social norms of fairness), then, it will be in the interests of the rational players to cooperate also. In that event, it has been suggested that cooperation could be sustained indefinitely (Andreoni & Miller, 1993)."
 
-- [ ] Embrey, M., Fréchette, G. R., & Yuksel, S. (2018). Cooperation in the finitely repeated prisoner’s dilemma. The Quarterly Journal of Economics, 133(1), 509-551.
+- [x] Embrey, M., Fréchette, G. R., & Yuksel, S. (2018). Cooperation in the finitely repeated prisoner’s dilemma. The Quarterly Journal of Economics, 133(1), 509-551.
 
 Show that the duration of a finitely repeated game is highly predictive of initial cooperation levels --> indication of control - if future gains outweigh initial short-term benefits, cooperation in earlier rounds is more beneficial to do not risk possibly sanctions of alter. Note that this study probably concerns dyadic embeddedness.
 
@@ -65,6 +65,8 @@ Show that the duration of a finitely repeated game is highly predictive of initi
 # Dyadic embeddedness
 
 ## Control - endogenous
+
+- [ ] Hauk, E. (2003). Multiple prisoner's dilemma games with(out) an outside option: An experimental study. *Theory and Decisions, 54*, 207-229. Retrieved from https://link.springer.com/content/pdf/10.1023/A:1027385819400.pdf
 
 ## Control - exogenous
 
@@ -106,7 +108,7 @@ Show that the duration of a finitely repeated game is highly predictive of initi
 
 - [ ] Sutter, M., Haighner, S., & Kocher, M. G. (2010). Choosing the carrot or the stick? Endogenous institutional choice in social dilemma situations. Review of Economic Studies, 77, 1540-1566.
 
-- [ ] Schneider, F., & Weber, R. A. (2013). Long-term commitment and cooperation. Working Paper 130. Department of Economics, University of Zürich. Show that a longer interaction duration (dyadic embeddedness) promotes cooperation more if it is chosen endogenously by the actors rather than imposed exogenously.
+- [x] Schneider, F., & Weber, R. A. (2013). Long-term commitment and cooperation. Working Paper 130. Department of Economics, University of Zürich. Show that a longer interaction duration (dyadic embeddedness) promotes cooperation more if it is chosen endogenously by the actors rather than imposed exogenously.
 
 ## Control - endogenous
 
@@ -124,15 +126,15 @@ Show that the duration of a finitely repeated game is highly predictive of initi
 
 # Additional readings that are not per se relevant
 
-- [ ] Simpson, B., & Willer, R. (2015). Beyond altruism: Sociological foundations of cooperation and prosocial behavior. Annual Review of Sociology, 41.
+- [x] Simpson, B., & Willer, R. (2015). Beyond altruism: Sociological foundations of cooperation and prosocial behavior. Annual Review of Sociology, 41.
 
 Annual review on cooperation.
 
-- [ ] Macy, M. W., & Flache, A. (1995). Beyond rationality in models of choice. Annual Review of Sociology, 21.
+- [x] Macy, M. W., & Flache, A. (1995). Beyond rationality in models of choice. Annual Review of Sociology, 21.
 
 Moving beyond RCT in sociology?
 
-- [ ] Kroneberg, C., & Kalter, F. (2012). Rational choice theory and empirical research: Methodological and theoretical contributions in Europe. Annual Review of Sociology, 38, 73-92.
+- [x] Kroneberg, C., & Kalter, F. (2012). Rational choice theory and empirical research: Methodological and theoretical contributions in Europe. Annual Review of Sociology, 38, 73-92.
 
 Overview of rational choice theory in sociological research.
 
