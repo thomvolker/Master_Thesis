@@ -15,11 +15,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Only laboratory experiment in which both dyadic and network embeddedness were manipulated in Trust Games in similar ways to the triadic repeated Trust Game article by Buskens, Raub and Van der Veer. This experiment however involves a more complex setting in which trustors play simultaneously rather than sequentially with one trustee, which affects the predictions.
 
-- [ ] Bolton, G.E., Katok, E., Ockenfels, A., 2004. How effective are online reputation mechanisms? An experimental study. Management Science 50, 1587–1602.
+- [x] Bolton, G.E., Katok, E., Ockenfels, A., 2004. How effective are online reputation mechanisms? An experimental study. Management Science 50, 1587–1602.
 
 Repeated Trust Games with dyadic and network embeddedness.
 
-- [ ] Bolton, G.E., Ockenfels, A., 2009. The limits of trusts in economic transactions: investigations of perfect reputation systems. In: Cook, K.S., Snijders, C., Buskens, V., Cheshire, C. (Eds.), eTrust. Forming Relationships in the Online World. Russell Sage, New York, pp. 15–36.
+- [x] Bolton, G.E., Ockenfels, A., 2009. The limits of trusts in economic transactions: investigations of perfect reputation systems. In: Cook, K.S., Snijders, C., Buskens, V., Cheshire, C. (Eds.), eTrust. Forming Relationships in the Online World. Russell Sage, New York, pp. 15–36.
 
 Repeated Trust Games with dyadic and network embeddedness.
 
@@ -82,7 +82,7 @@ Show that the duration of a finitely repeated game is highly predictive of initi
 
 - [ ] Bohnet, I., Harmgart, H., Huck, S., & Turan, J.-R. (2005). Learning trust. Journal of the European Economic Assocation, 3, 322-329.
 
-- [ ] Bolton, G. E., Katok, E., Ockenfels, A. (2004) How effective are electronic reputation mechanisms? An experimental investigation. Managerial Science, 50, 1587-1602.
+- [x] Bolton, G. E., Katok, E., Ockenfels, A. (2004) How effective are electronic reputation mechanisms? An experimental investigation. Managerial Science, 50, 1587-1602.
 
 - [ ] DiMaggio, P., & Louch, H. (1998). Socially embedded consumer transactions: For what kinds of purchases do people most often use networks? American Sociological Review, 63, 619-637.
 
